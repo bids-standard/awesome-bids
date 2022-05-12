@@ -24,6 +24,8 @@ BIDS Apps are also announced on [BIDS Apps](https://bids-apps.neuroimaging.io/ap
 Tools for converting data to/from BIDS from other standard or custom formats and layouts.
 
 - [bidsify](https://github.com/NILAB-UvA/bidsify)
+- [BIDScoin](https://bidscoin.readthedocs.io/en/stable/)
+- FieldTrip [data2bids](https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m)
 - ...
 
 ## Documentation
@@ -32,6 +34,7 @@ Documentation and publications related to BIDS.
 
 - [BIDS Specification](https://bids-specification.readthedocs.io)
 - [BIDS Starter Kit](https://bids-standard.github.io/bids-starter-kit/)
+- [FieldTrip](https://www.fieldtriptoolbox.org/example/bids/) examples, mainly for MEG, EEG, fNIRS, etc. 
 - ...
 
 ## Extension proposals
