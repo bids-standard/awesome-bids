@@ -1,29 +1,53 @@
 # Awesome BIDS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of awesome BIDS projects, proposals, apps and resources
-
+A curated list of awesome BIDS projects, proposals, apps and resources
 
 ## Contents
 
-- [Section](#section)
-- [Another Section](#another-section)
+- [Apps](#apps)
+- [Converters](#converters)
+- [Documentation](#documentation)
+- [Extension proposals](#extension-proposals)
+- [Libraries](#libraries)
 
 
-## Section
+## Apps
 
-About this section. Optional. Keep this short and focus on the list.
+BIDS Apps are also announced on [BIDS Apps](https://bids-apps.neuroimaging.io/apps/).
 
-- [List item](http://example.com)
-- [List item](http://example.com)
+- [aa](http://github.com/BIDS-Apps/aa) (Automatic Analysis)
+- [afni_proc](https://github.com/BIDS-Apps/afni_proc)
+- ...
 
+## Converters
 
-## Another Section
+Tools for converting data to/from BIDS from other standard or custom formats and layouts.
 
-### Subsection
+- [bidsify](https://github.com/NILAB-UvA/bidsify)
+- ...
 
-- [List item](http://example.com)
-- [List item](http://example.com)
+## Documentation
 
+Documentation and publications related to BIDS.
+
+- [BIDS Specification](https://bids-specification.readthedocs.io)
+- [BIDS Starter Kit](https://bids-standard.github.io/bids-starter-kit/)
+- ...
+
+## Extension proposals
+
+Community proposals for extending the BIDS specification or interoperating with BIDS datasets.
+
+- [BEP 002 - BIDS Stats Models](https://bids-standard.github.io/stats-models/)
+- ...
+
+## Software
+
+Software packages for working with BIDS datasets.
+
+- [BIDS-MATLAB](https://github.com/bids-standard/BIDS-MATLAB)
+- [PyBIDS](https://github.com/bids-standard/pybids)
+- ...
 
 ## Contribute
 
