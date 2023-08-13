@@ -35,7 +35,7 @@ Documentation and publications related to BIDS.
 
 - [BIDS Specification](https://bids-specification.readthedocs.io)
 - [BIDS Starter Kit](https://bids-standard.github.io/bids-starter-kit/)
-- [FieldTrip](https://www.fieldtriptoolbox.org/example/bids/) examples, mainly for MEG, EEG, fNIRS, etc. 
+- [FieldTrip](https://www.fieldtriptoolbox.org/example/bids/) examples, mainly for MEG, EEG, fNIRS, etc.
 - ...
 
 ## Extension proposals
