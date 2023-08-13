@@ -26,11 +26,12 @@ BIDS Apps are also announced on [BIDS Apps](https://bids-apps.neuroimaging.io/ap
 
 Tools for converting data to/from BIDS from other standard or custom formats and layouts.
 
+<!-- Converters starts -->
 - [bidsify](https://github.com/NILAB-UvA/bidsify)
 - [BIDScoin](https://bidscoin.readthedocs.io/en/stable/)
 - FieldTrip [data2bids](https://github.com/fieldtrip/fieldtrip/blob/master/data2bids.m)
 - [HeuDiConv](https://github.com/nipy/heudiconv/) and [ReproIn heuristic](https://github.com/repronim/reproin)
-- ...
+<!-- Converters ends -->
 
 ## Documentation
 
