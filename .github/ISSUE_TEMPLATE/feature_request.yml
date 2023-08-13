@@ -1,3 +1,4 @@
+---
 name: Feature request
 
 # See the json schema to help you create / update this form
@@ -7,7 +8,7 @@ description: Suggest an idea for this website
 
 body:
 
-  - type: textarea
+-   type: textarea
     attributes:
-      label: Your idea
-      description: When you suggest your idea, please try to supply (mock) examples!
+        label: Your idea
+        description: When you suggest your idea, please try to supply (mock) examples!
