@@ -1,0 +1,4 @@
+[submodule "bids-website"]
+	path = bids-website
+	url = https://github.com/bids-standard/bids-website.git
+	datalad-url = https://github.com/bids-standard/bids-website.git
