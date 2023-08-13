@@ -42,8 +42,10 @@ Documentation and publications related to BIDS.
 
 Community proposals for extending the BIDS specification or interoperating with BIDS datasets.
 
+<!-- BEP starts -->
 - [BEP 002 - BIDS Stats Models](https://bids-standard.github.io/stats-models/)
 - ...
+<!-- BEP ends -->
 
 ## Software
 
