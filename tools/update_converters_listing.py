@@ -22,8 +22,9 @@ def link(converter):
 def comment(converter):
     if converter.get("comment") in [None, ""]:
         return ""
-    comment = converter["comment"]
-    return comment.replace("\n", " ")
+    comment = " " + converter["comment"]
+    comment = comment.replace("\n", " ")
+    return comment.rstrip(" ")
 
 
 def last_commit(converter):
@@ -119,7 +120,7 @@ def write_converters(readme, converters, section: str):
     for converter_ in sorted_converters:
         print(converter_)
         readme.write(
-            f"- [{converter_['name']}]({link(converter_)}): {comment(converter_)}\n"
+            f"- [{converter_['name']}]({link(converter_)}):{comment(converter_)}\n"
         )
         readme.write(
             f"  {language_badge(converter_)}{last_commit(converter_)}{pypi(converter_)}{docker_badge(converter_)}{license_badge(converter_)}\n"
