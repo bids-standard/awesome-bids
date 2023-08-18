@@ -40,7 +40,7 @@ def pypi(converter):
     if not pypi:
         return ""
     pypi = pypi[0]
-    badge_img = f"https://badge.fury.io/py/{pypi['url'].replace('https://pypi.org/project/', '')}.svg"
+    badge_img = f"https://badge.fury.io/py/{pypi['url'].replace('https://pypi.org/project/', '').rstrip('/')}.svg"
     return f"[![PyPI version]({badge_img})]({pypi['url']})"
 
 
@@ -51,8 +51,8 @@ def docker_badge(converter):
     if not docker:
         return ""
     docker = docker[0]
-    badge_img = f"https://img.shields.io/docker/pulls/{docker['url'].replace('https://hub.docker.com/r/', '')}.svg{BADGE_FORMAT}"
-    return f"[![PyPI version]({badge_img})]({docker['url']})"
+    badge_img = f"https://img.shields.io/docker/pulls/{docker['url'].replace('https://hub.docker.com/r/', '').rstrip('/')}.svg{BADGE_FORMAT}"
+    return f"[![Docker version]({badge_img})]({docker['url']})"
 
 
 def language_badge(converter):
