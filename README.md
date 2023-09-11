@@ -5,6 +5,12 @@
 
 A curated list of awesome BIDS projects, proposals, apps and resources
 
+Make sure to also check repositories tagged for the following topics:
+
+- [BIDS](https://github.com/topics/bids)
+- [BIDS-Apps](https://github.com/topics/bidsapp)
+
+
 ## Contents
 
 - [Apps](#apps)
@@ -16,11 +22,55 @@ A curated list of awesome BIDS projects, proposals, apps and resources
 
 ## Apps
 
-BIDS Apps are also announced on [BIDS Apps](https://bids-apps.neuroimaging.io/apps/).
+BIDS apps are containerized tools to automatically process BIDS datasets.
 
-- [aa](http://github.com/BIDS-Apps/aa) (Automatic Analysis)
-- [afni_proc](https://github.com/BIDS-Apps/afni_proc)
-- ...
+BIDS Apps are also listed on [BIDS Apps](https://bids-apps.neuroimaging.io/apps/).
+
+<!-- APP starts -->
+- [![Docker version](https://img.shields.io/docker/pulls/bids/aa.svg?style=plastic)](https://hub.docker.com/r/bids/aa) [aa](https://github.com/bids-apps/aa): BIDS App containing an instance of the Automatic Analysis
+- [![Docker version](https://img.shields.io/docker/pulls/bids/afni_proc.svg?style=plastic)](https://hub.docker.com/r/bids/afni_proc) [afni_proc](https://github.com/bids-apps/afni_proc): prototype AFNI bids app implementing participant level preprocessing with afni_proc.py
+- [![Docker version](https://img.shields.io/docker/pulls/bids/antscorticalthickness.svg?style=plastic)](https://hub.docker.com/r/bids/antscorticalthickness) [antsCorticalThickness](https://github.com/bids-apps/antsCorticalThickness): BIDS App for calculating cortical thickness using ANTs
+- [![Docker version](https://img.shields.io/docker/pulls/bids/baracus.svg?style=plastic)](https://hub.docker.com/r/bids/baracus) [baracus](https://github.com/bids-apps/baracus): Predicts brain age, based on data from Freesurfer 5.3
+- [![Docker version](https://img.shields.io/docker/pulls/bids/brainiak-srm.svg?style=plastic)](https://hub.docker.com/r/bids/brainiak-srm) [brainiak-srm](https://github.com/bids-apps/brainiak-srm): This is the BIDS-app version of the Shared Response Model (SRM) of BrainIAK
+- [![Docker version](https://img.shields.io/docker/pulls/bids/brainsuite.svg?style=plastic)](https://hub.docker.com/r/bids/brainsuite) [BrainSuite](https://github.com/bids-apps/BrainSuite): BrainSuite's structural, diffusion, and functional MRI processing pipelines with QC functionalities.
+- [![Docker version](https://img.shields.io/docker/pulls/bids/broccoli.svg?style=plastic)](https://hub.docker.com/r/bids/broccoli) [BROCCOLI](https://github.com/bids-apps/BROCCOLI): BIDS App for BROCCOLI
+- [![Docker version](https://img.shields.io/docker/pulls/bids/cpac.svg?style=plastic)](https://hub.docker.com/r/bids/cpac) [CPAC](https://github.com/bids-apps/CPAC): BIDS Application for the Configurable Pipeline for the Analysis of Connectomes (C-PAC)
+- [![Docker version](https://img.shields.io/docker/pulls/bids/dparsf.svg?style=plastic)](https://hub.docker.com/r/bids/dparsf) [DPARSF](https://github.com/bids-apps/DPARSF): Docker version of DPARSF, also deployed at OpenNeuro.org
+- [![Docker version](https://img.shields.io/docker/pulls/bids/freesurfer.svg?style=plastic)](https://hub.docker.com/r/bids/freesurfer) [freesurfer](https://github.com/bids-apps/freesurfer): BIDS app wrapping recon-all from FreeSurfer
+- [![Docker version](https://img.shields.io/docker/pulls/bids/hcppipelines.svg?style=plastic)](https://hub.docker.com/r/bids/hcppipelines) [HCPPipelines](https://github.com/bids-apps/HCPPipelines): A BIDS App for minimal preprocessing using the HCP Pipelines
+- [![Docker version](https://img.shields.io/docker/pulls/bids/hyperalignment.svg?style=plastic)](https://hub.docker.com/r/bids/hyperalignment) [hyperalignment](https://github.com/bids-apps/hyperalignment): Hyperalignment is a functional alignment method that aligns subjects' brain data in a high-dimensional space of voxels/features.
+- [![Docker version](https://img.shields.io/docker/pulls/bids/mindboggle.svg?style=plastic)](https://hub.docker.com/r/bids/mindboggle) [mindboggle](https://github.com/bids-apps/mindboggle): Improve the accuracy, precision, and consistency of automated labeling and shape analysis of human brain image data
+- [![Docker version](https://img.shields.io/docker/pulls/bids/mrtrix3_connectome.svg?style=plastic)](https://hub.docker.com/r/bids/mrtrix3_connectome) [MRtrix3_connectome](https://github.com/bids-apps/MRtrix3_connectome): Generate subject connectomes from raw BIDS data & perform inter-subject connection density normalisation, using  the MRtrix3 software package.
+- [![Docker version](https://img.shields.io/docker/pulls/bids/ndmg.svg?style=plastic)](https://hub.docker.com/r/bids/ndmg) [ndmg](https://github.com/bids-apps/ndmg): BIDS app for NeuroData's MRI to Graphs pipeline
+- [![Docker version](https://img.shields.io/docker/pulls/bids/nipypelines.svg?style=plastic)](https://hub.docker.com/r/bids/nipypelines) [nipypelines](https://github.com/bids-apps/nipypelines): Preprocess functional tasks in a BIDS dataset.
+- [![Docker version](https://img.shields.io/docker/pulls/bids/oppni.svg?style=plastic)](https://hub.docker.com/r/bids/oppni) [oppni](https://github.com/bids-apps/oppni): runs fast optimization of preprocessing pipelines for BOLD fMRI
+- [![Docker version](https://img.shields.io/docker/pulls/bids/pymvpa.svg?style=plastic)](https://hub.docker.com/r/bids/pymvpa) [PyMVPA](https://github.com/bids-apps/PyMVPA): runs MVPA and RSA analysis BIDS bold derivative data
+- [![Docker version](https://img.shields.io/docker/pulls/bids/qap.svg?style=plastic)](https://hub.docker.com/r/bids/qap) [QAP](https://github.com/bids-apps/QAP): PCP Quality Assessment Protocol
+- [![Docker version](https://img.shields.io/docker/pulls/bids/rs_signal_extract.svg?style=plastic)](https://hub.docker.com/r/bids/rs_signal_extract) [rs_signal_extract](https://github.com/bids-apps/rs_signal_extract): BIDS App for resting state signal extraction using nilearn.
+- [![Docker version](https://img.shields.io/docker/pulls/bids/rshrf.svg?style=plastic)](https://hub.docker.com/r/bids/rshrf) [rsHRF](https://github.com/bids-apps/rsHRF): Resting state HRF estimation from BOLD-fMRI signal
+- [![Docker version](https://img.shields.io/docker/pulls/bids/spm.svg?style=plastic)](https://hub.docker.com/r/bids/spm) [SPM](https://github.com/bids-apps/SPM): BIDS App containing an instance of the SPM software.
+- [![Docker version](https://img.shields.io/docker/pulls/bids/tracula.svg?style=plastic)](https://hub.docker.com/r/bids/tracula) [tracula](https://github.com/bids-apps/tracula): implements Freesurfer's TRACULA (TRActs Constrained by UnderLying Anatomy) tool for cross-sectional as well as longitudinal (multi session) input data.
+- [![Docker version](https://img.shields.io/docker/pulls/sebastientourbier/connectomemapper-bidsapp.svg?style=plastic)](https://hub.docker.com/r/sebastientourbier/connectomemapper-bidsapp) [connectomemapper3](https://github.com/connectomicslab/connectomemapper3): Connectome Mapper 3 is a BIDS App that implements full anatomical, diffusion, resting/state functional MRI, and recently EEG processing pipelines, from raw T1 / DWI / BOLD , and preprocessed EEG data to multi-resolution brain parcellation with corresponding connection matrices.
+- [![Docker version](https://img.shields.io/docker/pulls/cpplab/bidsmreye.svg?style=plastic)](https://hub.docker.com/r/cpplab/bidsmreye) [bidsMReye](https://github.com/cpp-lln-lab/bidsMReye): BIDS app using deepMReye to decode eye motion for fMRI time series data.
+- [![Docker version](https://img.shields.io/docker/pulls/cpplab/bidspm.svg?style=plastic)](https://hub.docker.com/r/cpplab/bidspm) [bidspm](https://github.com/cpp-lln-lab/bidspm): an SPM centric BIDS app
+- [![Docker version](https://img.shields.io/docker/pulls/djarecka/fmriprep_fake.svg?style=plastic)](https://hub.docker.com/r/djarecka/fmriprep_fake) [fmriprep-fake](https://github.com/djarecka/fmriprep-fake): None
+- [![Docker version](https://img.shields.io/docker/pulls/khanlab/funcmasker-flex.svg?style=plastic)](https://hub.docker.com/r/khanlab/funcmasker-flex) [funcmasker-flex](https://github.com/khanlab/funcmasker-flex): BIDS App for U-net brain masking of fetal bold MRI
+- [![Docker version](https://img.shields.io/docker/pulls/khanlab/hippunfold.svg?style=plastic)](https://hub.docker.com/r/khanlab/hippunfold) [hippunfold](https://github.com/khanlab/hippunfold): BIDS App for Hippunfold (automated hippocampal unfolding and subfield segmentation)
+- [![Docker version](https://img.shields.io/docker/pulls/sebastientourbier/mialsuperresolutiontoolkit.svg?style=plastic)](https://hub.docker.com/r/sebastientourbier/mialsuperresolutiontoolkit) [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit): The Medical Image Analysis Laboratory Super-Resolution ToolKit (MIALSRTK) consists of a set of C++ and Python processing and workflow tools necessary to perform motion-robust super-resolution fetal MRI reconstruction in the BIDS Apps framework.
+- [![Docker version](https://img.shields.io/docker/pulls/micalab/micapipe.svg?style=plastic)](https://hub.docker.com/r/micalab/micapipe) [micapipe](https://github.com/MICA-MNI/micapipe): micapipe from the Multimodal imaging and connectome analysis lab (http://mica-mni.github.io) at the Montreal Neurological Institute. Read The Docs documentation below
+- [![Docker version](https://img.shields.io/docker/pulls/nipreps/dmriprep.svg?style=plastic)](https://hub.docker.com/r/nipreps/dmriprep) [dmriprep](https://github.com/nipreps/dmriprep): dMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse dMRI data. The transparent workflow dispenses of manual intervention, thereby ensuring the reproducibility of the results.
+- [![Docker version](https://img.shields.io/docker/pulls/nipreps/fmriprep.svg?style=plastic)](https://hub.docker.com/r/nipreps/fmriprep) [fmriprep](https://github.com/nipreps/fmriprep): fMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse fMRI data. The transparent workflow dispenses of manual intervention, thereby ensuring the reproducibility of the results.
+- [![Docker version](https://img.shields.io/docker/pulls/nipreps/mriqc.svg?style=plastic)](https://hub.docker.com/r/nipreps/mriqc) [mriqc](https://github.com/nipreps/mriqc): Automated Quality Control and visual reports for Quality Assessment of structural (T1w, T2w) and functional MRI of the brain
+- [![Docker version](https://img.shields.io/docker/pulls/nipreps/nibabies.svg?style=plastic)](https://hub.docker.com/r/nipreps/nibabies) [nibabies](https://github.com/nipreps/nibabies): Processing tools for magnetic resonance images of infant brains
+- [![Docker version](https://img.shields.io/docker/pulls/nipreps/nirodents.svg?style=plastic)](https://hub.docker.com/r/nipreps/nirodents) [nirodents](https://github.com/nipreps/nirodents): None
+- [![Docker version](https://img.shields.io/docker/pulls/nipreps/smriprep.svg?style=plastic)](https://hub.docker.com/r/nipreps/smriprep) [smriprep](https://github.com/nipreps/smriprep): Structural MRI PREProcessing (sMRIPrep) workflows for NIPreps (NeuroImaging PREProcessing tools)
+- [![Docker version](https://img.shields.io/docker/pulls/peerherholz/bidsonym.svg?style=plastic)](https://hub.docker.com/r/peerherholz/bidsonym) [BIDSonym](https://github.com/PeerHerholz/BIDSonym): a BIDS app for pseudo-anonymization of neuroimaging data
+- [![Docker version](https://img.shields.io/docker/pulls/pennlinc/toy_bids_app.svg?style=plastic)](https://hub.docker.com/r/pennlinc/toy_bids_app) [babs_tests](https://github.com/PennLINC/babs_tests): Tests for BABS
+- [![Docker version](https://img.shields.io/docker/pulls/pennbbl/qsiprep.svg?style=plastic)](https://hub.docker.com/r/pennbbl/qsiprep) [qsiprep](https://github.com/PennLINC/qsiprep): Preprocessing and reconstruction of diffusion MRI
+- [![Docker version](https://img.shields.io/docker/pulls/poldracklab/fitlins.svg?style=plastic)](https://hub.docker.com/r/poldracklab/fitlins) [fitlins](https://github.com/poldracklab/fitlins): Fit Linear Models to BIDS Datasets
+- [![Docker version](https://img.shields.io/docker/pulls/sebastientourbier/multiscalebrainparcellator.svg?style=plastic)](https://hub.docker.com/r/sebastientourbier/multiscalebrainparcellator) [multiscalebrainparcellator](https://github.com/sebastientourbier/multiscalebrainparcellator): Multi-Scale Brain Parcellator, part of the Connectome Mapping Toolkit (CMTK), is a BIDS App that implements a full anatomical MRI processing pipeline, from raw T1w data to structural brain parcellation at five different scales.
+- [![Docker version](https://img.shields.io/docker/pulls/trends/gift-bids.svg?style=plastic)](https://hub.docker.com/r/trends/gift-bids) [gift-bids](https://github.com/trendscenter/gift-bids): None
+<!-- APP ends -->
 
 ## Converters
 

@@ -5,14 +5,19 @@ from pathlib import Path
 BADGE_FORMAT = "?style=plastic"
 
 
+def root_dir() -> Path:
+    """Return the root directory of the repository."""
+    return Path(__file__).parent.parent
+
+
 def readme_file() -> Path:
     """Return the README file."""
-    return Path(__file__).parent.parent / "README.md"
+    return root_dir() / "README.md"
 
 
 def bids_website_data() -> Path:
     """Return the folder containing the converters listings."""
-    return Path(__file__).parent.parent / "bids-website" / "_data"
+    return root_dir() / "bids-website" / "_data"
 
 
 def logo(tool: dict) -> str:

@@ -16,8 +16,6 @@ yaml = YAML(typ="safe")
 def write_tools(f, tools: list[dict]) -> None:
     f.write("<!-- TOOLS starts -->\n")
 
-    # osrt tools by name
-
     tools = sorted(tools, key=lambda x: x["name"].lower())
 
     for tool_ in tools:
