@@ -11,6 +11,7 @@ from utils import language_badge
 from utils import last_commit
 from utils import license_badge
 from utils import link
+from utils import logo
 from utils import pypi
 from utils import readme_file
 
@@ -46,7 +47,7 @@ def write_converters(readme, converters: list[dict], section: str):
     for converter_ in sorted_converters:
         print(converter_)
         readme.write(
-            f"- [{converter_['name']}]({link(converter_)}):{comment(converter_)}\n"
+            f"- {logo(converter_)} [{converter_['name']}]({link(converter_)}):{comment(converter_)}\n"
         )
         readme.write(
             f"  {language_badge(converter_)}{last_commit(converter_)}{pypi(converter_)}{docker_badge(converter_)}{license_badge(converter_)}\n"
