@@ -41,8 +41,11 @@ def logo(tool: dict) -> str:
         else:
             continue
         logo.append(f"<img src='./images/logo_{lang}.png' width='{width}px'>")
-
-    return " ".join(logo)
+    logo = " ".join(logo)
+    if logo == "":
+        return ""
+    else:
+        return f"{logo} "
 
 
 def link(tool: dict) -> str:

@@ -19,8 +19,13 @@ def write_tools(f, tools: list[dict]) -> None:
     tools = sorted(tools, key=lambda x: x["name"].lower())
 
     for tool_ in tools:
+        badges = f"{last_commit(tool_)} {pypi(tool_)}"
+        if badges not in ["", " "]:
+            badges = f"  <br>{badges}\n"
+        else:
+            badges = ""
         f.write(
-            f"- {logo(tool_)} [{tool_['name']}]({link(tool_)}): {tool_['description']}\n  <br>{last_commit(tool_)} {pypi(tool_)}\n"
+            f"- {logo(tool_)}[{tool_['name']}]({link(tool_)}): {tool_['description'].strip()}\n{badges}"
         )
 
 
