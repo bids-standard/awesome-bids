@@ -20,7 +20,7 @@ def write_tools(f, tools: list[dict]) -> None:
 
     for tool_ in tools:
         f.write(
-            f"- {logo(tool_)} [{tool_['name']}]({link(tool_)}): {tool_['description']} {last_commit(tool_)} {pypi(tool_)}\n"
+            f"- {logo(tool_)} [{tool_['name']}]({link(tool_)}): {tool_['description']}\n  <br>{last_commit(tool_)} {pypi(tool_)}\n"
         )
 
 

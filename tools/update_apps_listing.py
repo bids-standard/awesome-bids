@@ -23,7 +23,7 @@ def write_apps(f, apps: list[dict]) -> None:
         if app_.get("status") in ["unmaintained"]:
             continue
         f.write(
-            f"- {docker_badge(app_)} [{app_['gh'].split('/')[1]}](https://github.com/{app_['gh']}): {app_['description']}\n"
+            f"- [{app_['gh'].split('/')[1]}](https://github.com/{app_['gh']}): {app_['description']}\n  <br>{docker_badge(app_)}\n"
         )
 
 
