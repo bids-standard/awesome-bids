@@ -4,7 +4,10 @@ from __future__ import annotations
 from rich import print
 from ruamel.yaml import YAML
 from utils import bids_website_data
+from utils import last_commit
 from utils import link
+from utils import logo
+from utils import pypi
 from utils import readme_file
 
 yaml = YAML(typ="safe")
@@ -13,17 +16,17 @@ yaml = YAML(typ="safe")
 def write_tools(f, tools: list[dict]) -> None:
     f.write("<!-- TOOLS starts -->\n")
 
-    # osrt tools by name
-
     tools = sorted(tools, key=lambda x: x["name"].lower())
 
     for tool_ in tools:
-        f.write(f"- [{tool_['name']}]({link(tool_)}): {tool_['description']}\n")
+        f.write(
+            f"- {logo(tool_)} [{tool_['name']}]({link(tool_)}): {tool_['description']} {last_commit(tool_)} {pypi(tool_)}\n"
+        )
 
 
 def main():
-    bep_file = bids_website_data() / "tools.yml"
-    with open(bep_file, "r") as f:
+    tool_file = bids_website_data() / "tools.yml"
+    with open(tool_file, "r") as f:
         tools = yaml.load(f)
 
     print(readme_file())

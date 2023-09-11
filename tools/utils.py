@@ -5,14 +5,44 @@ from pathlib import Path
 BADGE_FORMAT = "?style=plastic"
 
 
+def root_dir() -> Path:
+    """Return the root directory of the repository."""
+    return Path(__file__).parent.parent
+
+
 def readme_file() -> Path:
     """Return the README file."""
-    return Path(__file__).parent.parent / "README.md"
+    return root_dir() / "README.md"
 
 
 def bids_website_data() -> Path:
     """Return the folder containing the converters listings."""
-    return Path(__file__).parent.parent / "bids-website" / "_data"
+    return root_dir() / "bids-website" / "_data"
+
+
+def logo(tool: dict) -> str:
+    if "language" not in tool or tool["language"] in [None, ""]:
+        return ""
+
+    logo = []
+    for l in tool["language"]:
+        lang = l.lower()
+        if lang == "python":
+            width = "14"
+        elif lang == "matlab":
+            width = "17"
+        elif lang == "docker":
+            width = "22"
+        elif lang == "r":
+            lang = "R"
+            width = "18"
+        elif lang == "octave":
+            width = "16"
+        else:
+            continue
+        logo.append(f"<img src='./images/logo_{lang}.png' width='{width}px'>")
+
+    return " ".join(logo)
 
 
 def link(tool: dict) -> str:
@@ -24,8 +54,10 @@ def link(tool: dict) -> str:
 def last_commit(tool: dict) -> str:
     if tool.get("url") in [None, ""]:
         return ""
-    badge_img = f"https://img.shields.io/github/last-commit/{tool['url'].replace('https://github.com/', '')}{BADGE_FORMAT}"
-    return f"[![Last commit]({badge_img})]({tool['url']})"
+    if tool.get("url").startswith("https://github.com/"):
+        badge_img = f"https://img.shields.io/github/last-commit/{tool['url'].replace('https://github.com/', '')}{BADGE_FORMAT}"
+        return f"[![Last commit]({badge_img})]({tool['url']})"
+    return ""
 
 
 def pypi(tool: str) -> str:
@@ -49,13 +81,7 @@ def language_badge(tool: dict) -> str:
         tool["language"] = [tool["language"]]
 
     for language in tool["language"]:
-        if language == "Python":
-            color = "blue"
-        elif language == "MATLAB":
-            color = "orange"
-        elif language == "R":
-            color = "grey"
-        elif language == "C++":
+        if language == "C++":
             color = "red"
         elif language == "Javascript":
             color = "yellow"
