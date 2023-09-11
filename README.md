@@ -9,22 +9,24 @@ Make sure to also check repositories tagged for the following topics:
 
 - [BIDS](https://github.com/topics/bids)
 - [BIDS-Apps](https://github.com/topics/bidsapp)
+- [BIDS-Apps](https://github.com/topics/bids-format)
 
 
 ## Contents
 
 - [Apps](#apps)
 - [Converters](#converters)
+- [Datasets](#datasets)
 - [Documentation](#documentation)
-- [Extension proposals](#extension-proposals)
-- [Libraries](#libraries)
+- [BIDS Extension proposals](#extension-proposals)
+- [Tools](#tools)
+- [Contribute](#contribute)
 
 
 ## Apps
 
 BIDS apps are containerized tools to automatically process BIDS datasets.
-
-BIDS Apps are also listed on [BIDS Apps](https://bids-apps.neuroimaging.io/apps/).
+For more information check the [BIDS Apps website](https://bids-apps.neuroimaging.io/apps/).
 
 <!-- APP starts -->
 - [aa](https://github.com/bids-apps/aa): BIDS App containing an instance of the Automatic Analysis
@@ -114,6 +116,12 @@ BIDS Apps are also listed on [BIDS Apps](https://bids-apps.neuroimaging.io/apps/
 - [gift-bids](https://github.com/trendscenter/gift-bids): None
   <br>[![Docker version](https://img.shields.io/docker/pulls/trends/gift-bids.svg?style=plastic)](https://hub.docker.com/r/trends/gift-bids)
 <!-- APP ends -->
+
+
+## Datasets
+
+
+<!-- TODO -->
 
 ## Converters
 
@@ -248,7 +256,8 @@ Ongoing community proposals for extending the BIDS specification or interoperati
 - [BEP035](https://bids.neuroimaging.io/bep035): Modular extensions for individual participant data mega-analyses with non-compliant derivatives
 <!-- BEP ends -->
 
-## Software
+
+## Tools
 
 Software packages for working with BIDS datasets.
 
@@ -286,6 +295,7 @@ Software packages for working with BIDS datasets.
 - <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_octave.png' width='16px'> [spm_2_bids](https://spm-2-bids.readthedocs.io/en/latest/): a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012))
   <br>[![Last commit](https://img.shields.io/github/last-commit/cpp-lln-lab/spm_2_bids?style=plastic)](https://github.com/cpp-lln-lab/spm_2_bids)
 <!-- TOOLS ends -->
+
 
 ## Contribute
 
