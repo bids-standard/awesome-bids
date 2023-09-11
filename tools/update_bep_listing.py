@@ -1,8 +1,6 @@
 """update section about BEP in readme file"""
 from __future__ import annotations
 
-from pathlib import Path
-
 from rich import print
 from ruamel.yaml import YAML
 from utils import bids_website_data
@@ -14,7 +12,7 @@ yaml = YAML(typ="safe")
 def write_beps(f, beps: list[dict]) -> None:
     f.write("<!-- BEP starts -->\n")
 
-    for section in ["raw", "derivative", "file format"]:
+    for section in ["raw", "derivative"]:
         f.write(f"\n ### {section}\n\n")
 
         subset = [x for x in beps if section in x["content"]]
