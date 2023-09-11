@@ -4,6 +4,7 @@ from __future__ import annotations
 from rich import print
 from ruamel.yaml import YAML
 from utils import bids_website_data
+from utils import link
 from utils import readme_file
 
 yaml = YAML(typ="safe")
@@ -12,13 +13,12 @@ yaml = YAML(typ="safe")
 def write_tools(f, tools: list[dict]) -> None:
     f.write("<!-- TOOLS starts -->\n")
 
-    f.write(f"\n ### {section}\n\n")
+    # osrt tools by name
 
-    subset = [x for x in tools if section in x["content"]]
-    for bep_ in subset:
-        f.write(
-            f"- [BEP{bep_['number']}](https://bids.neuroimaging.io/bep{bep_['number']}): {bep_['title']}\n"
-        )
+    tools = sorted(tools, key=lambda x: x["name"].lower())
+
+    for tool_ in tools:
+        f.write(f"- [{tool_['name']}]({link(tool_)}): {tool_['description']}\n")
 
 
 def main():
