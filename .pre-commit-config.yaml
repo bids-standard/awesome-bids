@@ -24,7 +24,7 @@ repos:
         args: [--mapping, '4', --sequence, '4', --offset, '0']
 
 -   repo: https://github.com/asottile/reorder-python-imports
-    rev: v3.10.0
+    rev: v3.11.0
     hooks:
     -   id: reorder-python-imports
         args: [--py37-plus, --add-import, from __future__ import annotations]
