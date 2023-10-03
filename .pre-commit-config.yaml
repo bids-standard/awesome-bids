@@ -12,7 +12,7 @@ repos:
     -   id: check-case-conflict
 
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.2.5
+    rev: v2.2.6
     hooks:
     -   id: codespell
         args: [--config=.codespellrc]
@@ -24,7 +24,7 @@ repos:
         args: [--mapping, '4', --sequence, '4', --offset, '0']
 
 -   repo: https://github.com/asottile/reorder-python-imports
-    rev: v3.11.0
+    rev: v3.12.0
     hooks:
     -   id: reorder-python-imports
         args: [--py37-plus, --add-import, from __future__ import annotations]
