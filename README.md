@@ -159,6 +159,8 @@ Tools for converting data to/from BIDS from other standard or custom formats and
   <br>[![Last commit](https://img.shields.io/github/last-commit/cbedetti/Dcm2Bids?style=plastic)](https://github.com/cbedetti/Dcm2Bids)[![PyPI version](https://badge.fury.io/py/Dcm2Bids.svg)](https://pypi.org/project/Dcm2Bids)[![Docker version](https://img.shields.io/docker/pulls/unfmontreal/dcm2bids.svg?style=plastic)](https://hub.docker.com/r/unfmontreal/dcm2bids)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
 - <img src='./images/logo_matlab.png' width='17px'>  [Explore ASL](https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/): Convert DICOM and NIFTI data to the ASL-BIDS format.
   <br>[![Last commit](https://img.shields.io/github/last-commit/ExploreASL/ExploreASL?style=plastic)](https://github.com/ExploreASL/ExploreASL)
+- <img src='./images/logo_python.png' width='14px'>  [ezBIDS](https://brainlife.io/docs/using_ezBIDS/): A web-based BIDS conversion tool with four unique features: (1) No installation or programming requirements. (2) Handling of both imaging and task events data and metadata. (3) Semi-automated inference and guidance for adherence to BIDS. (4) Multiple data management options, including download BIDS data to local system, or transfer to OpenNeuro.org or to brainlife.io.
+  <br>![](https://img.shields.io/badge/Javascript-yellow.svg?style=plastic)![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/brainlife/ezbids?style=plastic)](https://github.com/brainlife/ezbids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
 - <img src='./images/logo_python.png' width='14px'>  [HeuDiConv](https://heudiconv.readthedocs.io/): A flexible DICOM converter for organizing brain imaging data into structured directory layouts
   <br>[![Last commit](https://img.shields.io/github/last-commit/nipy/heudiconv?style=plastic)](https://github.com/nipy/heudiconv)[![PyPI version](https://badge.fury.io/py/heudiconv.svg)](https://pypi.org/project/heudiconv)[![Docker version](https://img.shields.io/docker/pulls/nipy/heudiconv.svg?style=plastic)](https://hub.docker.com/r/nipy/heudiconv)[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=plastic)](https://opensource.org/licenses/Apache-2.0)
 -  [Horos (Osirix) export plugin](https://github.com/mslw/horos-bids-output): Horos plugin for BIDS output.
@@ -236,7 +238,6 @@ Ongoing community proposals for extending the BIDS specification or interoperati
 - [BEP022](https://bids.neuroimaging.io/bep022): Magnetic Resonance Spectroscopy (MRS)
 - [BEP024](https://bids.neuroimaging.io/bep024): Computed Tomography scan (CT)
 - [BEP026](https://bids.neuroimaging.io/bep026): Microelectrode Recordings
-- [BEP029](https://bids.neuroimaging.io/bep029): Virtual and physical motion data
 - [BEP032](https://bids.neuroimaging.io/bep032): Animal electrophysiology
 - [BEP033](https://bids.neuroimaging.io/bep033): Advanced Diffusion Weighted Imaging (aDWI)
 - [BEP036](https://bids.neuroimaging.io/bep036): Phenotypic Data Guidelines
@@ -267,6 +268,8 @@ Software packages for working with BIDS datasets.
 <!-- TOOLS starts -->
 - <img src='./images/logo_python.png' width='14px'> [babs](https://pennlinc-babs.readthedocs.io/): BIDS App Bootstrap (BABS) is a reproducible, generalizable, and scalable Python package for BIDS App analysis of large datasets. It uses DataLad and adopts FAIRly big framework.
   <br>[![Last commit](https://img.shields.io/github/last-commit/PennLINC/babs?style=plastic)](https://github.com/PennLINC/babs) [![PyPI version](https://badge.fury.io/py/babs.svg)](https://pypi.org/project/babs/)
+- <img src='./images/logo_python.png' width='14px'> [bids stats model](https://bids-standard.github.io/stats-models/index.html): Validate BIDS statistical model. To learn more the [BIDS stats model website](https://bids-standard.github.io/stats-models/index.html)
+  <br> [![PyPI version](https://badge.fury.io/py/bsmschema.svg)](https://pypi.org/project/bsmschema/)
 - <img src='./images/logo_python.png' width='14px'> [bids-cfood](https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood): a module to handle BIDS dataset for the caosDB data crawler
 - <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_octave.png' width='16px'> [bids-matlab](https://github.com/bids-standard/bids-matlab): MATLAB/Octave tools to interact with datasets conforming to the BIDS format
   <br>[![Last commit](https://img.shields.io/github/last-commit/bids-standard/bids-matlab?style=plastic)](https://github.com/bids-standard/bids-matlab)
@@ -283,11 +286,20 @@ Software packages for working with BIDS datasets.
   <br>[![Last commit](https://img.shields.io/github/last-commit/cohenlabUNC/clpipe?style=plastic)](https://github.com/cohenlabUNC/clpipe)
 - <img src='./images/logo_python.png' width='14px'> [cuBIDS](https://cubids.readthedocs.io/en/latest/): a Python package designed to facilitate reproducible curation of neuroimaging BIDS datasets
   <br>[![Last commit](https://img.shields.io/github/last-commit/pennlinc/cubids?style=plastic)](https://github.com/pennlinc/cubids) [![PyPI version](https://badge.fury.io/py/cubids.svg)](https://pypi.org/project/cubids/)
+- <img src='./images/logo_python.png' width='14px'> [File mapper](https://github.com/DCAN-Labs/file-mapper): An easy tool to copy/move/symlink files from one directory to the other! Can be used to "convert" dataset to be BIDS compliant.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/DCAN-Labs/file-mapper?style=plastic)](https://github.com/DCAN-Labs/file-mapper)
 - <img src='./images/logo_python.png' width='14px'> [GUI dataset description generator](None): GUI form that generates `dataset_description.json`
   <br>[![Last commit](https://img.shields.io/github/last-commit/tolik-g/BIDS?style=plastic)](https://github.com/tolik-g/BIDS)
+- [Hierarchical Event Descriptors (HED) online tools](https://www.hed-resources.org): Online tools for annotation, validation, summary, and assembly of event file contents and annotations.
+- [Hierarchical Event Descriptors (HED) python tools](https://www.hed-resources.org): HED libraries supporting schema development as well as annotation, validation, and analysis.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/hed-standard/hed-python?style=plastic)](https://github.com/hed-standard/hed-python) [![PyPI version](https://badge.fury.io/py/hedtools.svg)](https://pypi.org/project/hedtools/)
 - <img src='./images/logo_matlab.png' width='17px'> [Lead-DBS](https://www.lead-dbs.org/): A toolbox facilitating Deep Brain Stimulation electrode reconstructions  and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
 - <img src='./images/logo_python.png' width='14px'> [mne-bids](https://mne.tools/mne-bids/stable/index.html): collection of tools for converting magnetoencephalography (MEG) data into BIDS format, as well as some helper functions for creating the folders and metadata needed for a BIDS dataset.
   <br>[![Last commit](https://img.shields.io/github/last-commit/mne-tools/mne-bids?style=plastic)](https://github.com/mne-tools/mne-bids)
+- [neurobagel annotate](https://neurobagel.org/data_prep/): This tool allows you to create a machine readable data dictionary in .json format for a tabular phenotypic file in .tsv format ("Data table").
+- [neurobagel query](https://neurobagel.org/query_tool/): Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging parameters.
+- <img src='./images/logo_python.png' width='14px'> [nipopy](https://neurobagel.org/nipoppy/overview/): Lightweight neuroimaging workflow manager to help with DICOM to BIDS conversion and running BIDS apps.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/neurodatascience/nipoppy?style=plastic)](https://github.com/neurodatascience/nipoppy)
 - [OpenNeuro](http://openneuro.org): A free and open platform for validating and sharing BIDS-compliant data.
 - [PRFmodel](https://github.com/vistalab/PRFmodel/wiki): a set of tools to fit population receptive field models to BIDS datasets
   <br>[![Last commit](https://img.shields.io/github/last-commit/vistalab/PRFmodel?style=plastic)](https://github.com/vistalab/PRFmodel)
