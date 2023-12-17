@@ -39,7 +39,7 @@ def docker_badge(converter: dict):
 
 def write_converters(readme, converters: list[dict], section: str):
     # for a section of converters write info about each converter with badges below
-    readme.write(f"\n ### {section}\n\n")
+    readme.write(f"\n### {section}\n\n")
 
     converters = converters[0]["members"]
     sorted_converters = sorted(converters, key=lambda x: x["name"].lower())

@@ -13,7 +13,7 @@ def write_beps(f, beps: list[dict]) -> None:
     f.write("<!-- BEP starts -->\n")
 
     for section in ["raw", "derivative"]:
-        f.write(f"\n ### {section}\n\n")
+        f.write(f"\n### {section}\n\n")
 
         subset = [x for x in beps if section in x["content"]]
         for bep_ in subset:

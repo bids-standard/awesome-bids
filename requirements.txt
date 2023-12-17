@@ -1,0 +1,6 @@
+mkdocs>=1.1
+mkdocs-material>=5.4
+pre-commit
+black
+codespell
+reorder-python-imports

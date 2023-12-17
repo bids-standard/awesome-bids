@@ -20,7 +20,7 @@ Documentation related to BIDS.
 - The [FieldTrip](https://www.fieldtriptoolbox.org/example/bids/) websites contains
   many BIDS  tips and  examples, mainly for MEG, EEG, fNIRS, etc.
 - If you help to mention BIDS in one of your grant,
-  make sure that to check out the [BIDS grant writing kit](https://github.com/bids-standard/grant_writing_kit)
+  make sure that to check out the [BIDS grant writing kit](https://github.com/bids-standard/grant_writing_kit#bids-grant-writing-kit).
 
 ## Community
 
@@ -62,7 +62,7 @@ Tools for converting data to/from BIDS from other standard or custom formats and
 
 <!-- Converters starts -->
 
- ### MRI
+### MRI
 
 -  [Autobids](https://github.com/khanlab/autobids): Automated Dicom to BIDS and pipelines using compute canada. From the Center for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute.
   <br>[![Last commit](https://img.shields.io/github/last-commit/khanlab/autobids?style=plastic)](https://github.com/khanlab/autobids)
@@ -111,7 +111,7 @@ Tools for converting data to/from BIDS from other standard or custom formats and
 -  [XNAT2BIDS](https://github.com/kamillipi/2bids): Simple xnat pipeline to convert DICOM scans to BIDS-compatible output (nii+json).
   <br>![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/kamillipi/2bids?style=plastic)](https://github.com/kamillipi/2bids)
 
- ### MEEG
+### MEEG
 
 - <img src='./images/logo_python.png' width='14px'>  [BIDSme](https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1):
   <br>[![Last commit](https://img.shields.io/github/last-commit/nbeliy/bidsme?style=plastic)](https://github.com/nbeliy/bidsme)[![License: GPL-2.0](https://img.shields.io/badge/License-GPLv2-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-2.0)
@@ -128,7 +128,7 @@ Tools for converting data to/from BIDS from other standard or custom formats and
 - <img src='./images/logo_python.png' width='14px'>  [sovabids](https://sovabids.readthedocs.io/en/latest/): A Python package for the automatic conversion of EEG datasets to the BIDS standard, with a focus on making the most out of metadata.
   <br>[![Last commit](https://img.shields.io/github/last-commit/yjmantilla/sovabids?style=plastic)](https://github.com/yjmantilla/sovabids)
 
- ### physiological
+### physiological
 
 - <img src='./images/logo_python.png' width='14px'>  [BIDScoin](https://bidscoin.readthedocs.io/en/stable/): BIDScoin converts your source-level neuroimaging data to BIDS
   <br>[![Last commit](https://img.shields.io/github/last-commit/Donders-Institute/bidscoin?style=plastic)](https://github.com/Donders-Institute/bidscoin)[![PyPI version](https://badge.fury.io/py/bidscoin.svg)](https://pypi.org/project/bidscoin)
@@ -137,7 +137,7 @@ Tools for converting data to/from BIDS from other standard or custom formats and
 - <img src='./images/logo_python.png' width='14px'>  [phys2bids](https://phys2bids.readthedocs.io/en/latest/): Python3 library to format physiological files in BIDS.
   <br>[![Last commit](https://img.shields.io/github/last-commit/physiopy/phys2bids?style=plastic)](https://github.com/physiopy/phys2bids)[![PyPI version](https://badge.fury.io/py/phys2bids.svg)](https://pypi.org/project/phys2bids)
 
- ### others
+### others
 
 - <img src='./images/logo_python.png' width='14px'>  [convert-eprime](https://github.com/tsalo/convert-eprime): Python functions to convert E-Prime files to csvs. Not currently being developed.
   <br>[![Last commit](https://img.shields.io/github/last-commit/tsalo/convert-eprime?style=plastic)](https://github.com/tsalo/convert-eprime)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
@@ -149,6 +149,13 @@ Tools for converting data to/from BIDS from other standard or custom formats and
   <br>[![Last commit](https://img.shields.io/github/last-commit/dissagaliyeva/sim2bids?style=plastic)](https://github.com/dissagaliyeva/sim2bids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
 <!-- Converters ends -->
 
+## Validation
+
+Make sure you use to validate any BIDS dataset you are working with.
+
+You can [use it in a browser](https://bids-standard.github.io/bids-validator/)
+or [install the package](https://github.com/bids-standard/bids-validator#quickstart)
+and use it as a command line tool.
 
 ## BIDS Apps
 
@@ -329,7 +336,7 @@ make sure to check our [documentation regarding the BIDS extension proposal proc
 
 <!-- BEP starts -->
 
- ### raw
+### raw
 
 - [BEP004](https://bids.neuroimaging.io/bep004): Susceptibility Weighted Imaging (SWI)
 - [BEP020](https://bids.neuroimaging.io/bep020): Eye Tracking including Gaze Position and Pupil Size
@@ -344,7 +351,7 @@ make sure to check our [documentation regarding the BIDS extension proposal proc
 - [BEP039](https://bids.neuroimaging.io/bep039): Dimensionality reduction-based networks
 - [BEP040](https://bids.neuroimaging.io/bep040): Functional Ultrasound (fUS)
 
- ### derivative
+### derivative
 
 - [BEP011](https://bids.neuroimaging.io/bep011): Structural preprocessing derivatives
 - [BEP012](https://bids.neuroimaging.io/bep012): Functional preprocessing derivatives
