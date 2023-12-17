@@ -3,27 +3,154 @@
 <img src="https://raw.githubusercontent.com/bids-standard/bids-specification/master/BIDS_logo/BIDS_logo_white_transparent_background_crop.png#gh-dark-mode-only" alt="bids-logo" width="600"/>
 <img src="https://raw.githubusercontent.com/bids-standard/bids-specification/master/BIDS_logo//BIDS_logo_black_transparent_background_crop.png#gh-light-mode-only" alt="bids-logo" width="600"/>
 
-A curated list of awesome BIDS projects, proposals, apps and resources
+A curated list of awesome projects, proposals, apps and resources
+related to the Brain Imaging Data Structure.
 
-Make sure to also check repositories tagged for the following topics:
+## Documentation
 
-- [BIDS](https://github.com/topics/bids)
-- [BIDS-Apps](https://github.com/topics/bidsapp)
-- [bids-format](https://github.com/topics/bids-format)
+Documentation related to BIDS.
+
+- The central [BIDS website](http://www.bids-standard.org/) to get general information about BIDS.
+- The [BIDS Starter Kit](https://bids-standard.github.io/bids-starter-kit/)
+  is the best place to get started with BIDS.
+- The official [BIDS Specification](https://bids-specification.readthedocs.io) to get into the details.
+- The [BIDS youtube channel](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw)
+  where we try to curate [playlists](https://www.youtube.com/@brainimagingdatastructure6721/playlists) of BIDS related videos.
+- Slides of many BIDS related presentations are available on the [Open Science Framework](https://osf.io/yn93h/).
+- The [FieldTrip](https://www.fieldtriptoolbox.org/example/bids/) websites contains
+  many BIDS  tips and  examples, mainly for MEG, EEG, fNIRS, etc.
+- If you help to mention BIDS in one of your grant,
+  make sure that to check out the [BIDS grant writing kit](https://github.com/bids-standard/grant_writing_kit)
+
+## Community
+
+- The [Neurostars discourse forum](https://neurostars.org/tag/bids)
+  run by the International Neuroinformatics Coordinating Facility ([INCF](https://www.incf.org/))
+  with its own [BIDS category](https://neurostars.org/tag/bids).
+  With a lot BIDS users and developers,
+  it is the best place where to ask BIDS related questions.
+
+- [BIDS mailing list](https://groups.google.com/g/bids-discussion):
+  a google group for announcements and discussions around BIDS.
+
+- [BIDS in the Brainhack mattersmost](https://mattermost.brainhack.org/brainhack/channels/bids_general):
+  [mattermost](https://mattermost.com/) is the open source equivalent of slack
+  and the [Brainhack](https://brainhack.org/) instance has over 5000 members
+  with its own channel dedicated BIDS channel.
+
+## Social media
+
+Here are the official BIDS account on several social media.
+
+- [Twitter / X](https://twitter.com/BIDSstandard)
+- [Mastodon](https://fosstodon.org/@bidsstandard/)
+- [Bluesky](https://bsky.app/profile/bidsstandard.bsky.social)
+- [YouTube](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw)
+- Our podcast on [anchor](https://anchor.fm/bids-maintenance)
+
+## Datasets
+
+- The [BIDS examples](https://bids-standard.github.io/bids-examples/) host dataset of each modality.
+  with empty raw data files. These datasets can be useful to:
+  - serve as an example on how a BIDS dataset can be structured
+  - write lightweight software tests
+- [OpenNeuro](https://openneuro.org/) host more than 1000 open BIDS datasets of all datatypes.
+
+## Converters
+
+Tools for converting data to/from BIDS from other standard or custom formats and layouts.
+
+<!-- Converters starts -->
+
+ ### MRI
+
+-  [Autobids](https://github.com/khanlab/autobids): Automated Dicom to BIDS and pipelines using compute canada. From the Center for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/khanlab/autobids?style=plastic)](https://github.com/khanlab/autobids)
+- <img src='./images/logo_python.png' width='14px'>  [BIDScoin](https://bidscoin.readthedocs.io/en/stable/): BIDScoin converts your source-level neuroimaging data to BIDS
+  <br>[![Last commit](https://img.shields.io/github/last-commit/Donders-Institute/bidscoin?style=plastic)](https://github.com/Donders-Institute/bidscoin)[![PyPI version](https://badge.fury.io/py/bidscoin.svg)](https://pypi.org/project/bidscoin)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_R.png' width='18px'>  [BIDSconvertR](https://bidsconvertr.github.io/): The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces. It consists of the following steps: (i) convert DICOM data to NIfTI data using dcm2niix (ii) structure this data according to the BIDS specification (iii) provide the papayaWidget viewer for inspecting the images
+  <br>[![Last commit](https://img.shields.io/github/last-commit/bidsconvertr/bidsconvertr?style=plastic)](https://github.com/bidsconvertr/bidsconvertr)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_python.png' width='14px'>  [bidsify](https://github.com/NILAB-UvA/bidsify): Tool to convert source MRI datasets to BIDS-compatible datasets.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/NILAB-UvA/bidsify?style=plastic)](https://github.com/NILAB-UvA/bidsify)[![PyPI version](https://badge.fury.io/py/bidsify.svg)](https://pypi.org/project/bidsify)[![Docker version](https://img.shields.io/docker/pulls/lukassnoek/bidsify.svg?style=plastic)](https://hub.docker.com/r/lukassnoek/bidsify)
+- <img src='./images/logo_python.png' width='14px'>  [bidskit](https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md): Utility functions for working with DICOM and BIDS neuroimaging data.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/jmtyszka/bidskit?style=plastic)](https://github.com/jmtyszka/bidskit)[![PyPI version](https://badge.fury.io/py/bidskit.svg)](https://pypi.org/project/bidskit)[![Docker version](https://img.shields.io/docker/pulls/jmtyszka/bidskit.svg?style=plastic)](https://hub.docker.com/r/jmtyszka/bidskit)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+- <img src='./images/logo_python.png' width='14px'>  [BIDSme](https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1):
+  <br>[![Last commit](https://img.shields.io/github/last-commit/nbeliy/bidsme?style=plastic)](https://github.com/nbeliy/bidsme)[![License: GPL-2.0](https://img.shields.io/badge/License-GPLv2-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-2.0)
+- <img src='./images/logo_python.png' width='14px'>  [BMAT](https://github.com/ColinVDB/BMAT):
+  <br>[![Last commit](https://img.shields.io/github/last-commit/ColinVDB/BMAT?style=plastic)](https://github.com/ColinVDB/BMAT)[![Docker version](https://img.shields.io/docker/pulls/colinvdb/bmat-dcm2niix.svg?style=plastic)](https://hub.docker.com/r/colinvdb/bmat-dcm2niix)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_python.png' width='14px'>  [BrkRaw](https://github.com/BrkRaw/brkraw): For a preclinical Bruker MRI scanner
+  <br>[![Last commit](https://img.shields.io/github/last-commit/BrkRaw/brkraw?style=plastic)](https://github.com/BrkRaw/brkraw)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_python.png' width='14px'>  [Clinica](https://aramislab.paris.inria.fr/clinica/docs/public/latest/):
+  <br>[![Last commit](https://img.shields.io/github/last-commit/aramis-lab/clinica?style=plastic)](https://github.com/aramis-lab/clinica)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+- <img src='./images/logo_python.png' width='14px'>  [dac2bids](https://github.com/dangom/dac2bids): Create a BIDS structure for a DICOM folder.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/dangom/dac2bids?style=plastic)](https://github.com/dangom/dac2bids)
+- <img src='./images/logo_python.png' width='14px'>  [Data2Bids](https://github.com/SIMEXP/Data2Bids): Converts MRI files from extension supported by nibabel into NIfTI and convert them to BIDS
+  <br>[![Last commit](https://img.shields.io/github/last-commit/SIMEXP/Data2Bids?style=plastic)](https://github.com/SIMEXP/Data2Bids)[![PyPI version](https://badge.fury.io/py/data2bids.svg)](https://pypi.org/project/data2bids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+- <img src='./images/logo_python.png' width='14px'>  [Dcm2Bids](https://unfmontreal.github.io/Dcm2Bids/): converts DICOM files using dcm2niix into BIDS
+  <br>[![Last commit](https://img.shields.io/github/last-commit/cbedetti/Dcm2Bids?style=plastic)](https://github.com/cbedetti/Dcm2Bids)[![PyPI version](https://badge.fury.io/py/Dcm2Bids.svg)](https://pypi.org/project/Dcm2Bids)[![Docker version](https://img.shields.io/docker/pulls/unfmontreal/dcm2bids.svg?style=plastic)](https://hub.docker.com/r/unfmontreal/dcm2bids)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_matlab.png' width='17px'>  [Explore ASL](https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/): Convert DICOM and NIFTI data to the ASL-BIDS format.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/ExploreASL/ExploreASL?style=plastic)](https://github.com/ExploreASL/ExploreASL)
+- <img src='./images/logo_python.png' width='14px'>  [ezBIDS](https://brainlife.io/docs/using_ezBIDS/): A web-based BIDS conversion tool with four unique features: (1) No installation or programming requirements. (2) Handling of both imaging and task events data and metadata. (3) Semi-automated inference and guidance for adherence to BIDS. (4) Multiple data management options, including download BIDS data to local system, or transfer to OpenNeuro.org or to brainlife.io.
+  <br>![](https://img.shields.io/badge/Javascript-yellow.svg?style=plastic)![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/brainlife/ezbids?style=plastic)](https://github.com/brainlife/ezbids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+- <img src='./images/logo_python.png' width='14px'>  [HeuDiConv](https://heudiconv.readthedocs.io/): A flexible DICOM converter for organizing brain imaging data into structured directory layouts
+  <br>[![Last commit](https://img.shields.io/github/last-commit/nipy/heudiconv?style=plastic)](https://github.com/nipy/heudiconv)[![PyPI version](https://badge.fury.io/py/heudiconv.svg)](https://pypi.org/project/heudiconv)[![Docker version](https://img.shields.io/docker/pulls/nipy/heudiconv.svg?style=plastic)](https://hub.docker.com/r/nipy/heudiconv)[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=plastic)](https://opensource.org/licenses/Apache-2.0)
+-  [Horos (Osirix) export plugin](https://github.com/mslw/horos-bids-output): Horos plugin for BIDS output.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/mslw/horos-bids-output?style=plastic)](https://github.com/mslw/horos-bids-output)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_python.png' width='14px'>  [mercure-dcm2bids](https://github.com/mercure-imaging/mercure-dcm2bids): A containerized app that can be used to perform BIDS conversion of  DICOM studies sent directly to mercure from a scanner or PACS. mercure  is an open-source DICOM orchestration platform that can integrate  containerized apps into clinical workflows. It has a graphical user  interface making it easy to setup and manage BIDS configurations for  multiple protocols. The Dcm2Bids tool is used for conversion.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/mercure-imaging/mercure-dcm2bids?style=plastic)](https://github.com/mercure-imaging/mercure-dcm2bids)[![Docker version](https://img.shields.io/docker/pulls/mercureimaging/mercure-dcm2bids.svg?style=plastic)](https://hub.docker.com/r/mercureimaging/mercure-dcm2bids)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_python.png' width='14px'>  [niix2bids](https://github.com/benoitberanger/niix2bids): Use this package as a command line to organize your Nifti dataset into BIDS.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/benoitberanger/niix2bids?style=plastic)](https://github.com/benoitberanger/niix2bids)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+-  [OpenfMRI2BIDS](https://github.com/bids-standard/openfmri2bids): Convert OpenfMRI dataset to BIDS
+  <br>[![Last commit](https://img.shields.io/github/last-commit/bids-standard/openfmri2bids?style=plastic)](https://github.com/bids-standard/openfmri2bids)
+- <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_python.png' width='14px'>  [PET2BIDS](https://github.com/openneuropet/PET2BIDS): Helps you convert your PET data! raw PET scanner files (for example ecat, dicom) and additional side file like excel sheets.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/openneuropet/PET2BIDS?style=plastic)](https://github.com/openneuropet/PET2BIDS)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+- <img src='./images/logo_python.png' width='14px'>  [ReproIn](https://github.com/ReproNim/reproin): HeuDiConv-based turnkey solution: a setup for automatic generation of shareable, version-controlled BIDS datasets from MR scanners.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/ReproNim/reproin?style=plastic)](https://github.com/ReproNim/reproin)[![Docker version](https://img.shields.io/docker/pulls/repronim/reproin.svg?style=plastic)](https://hub.docker.com/r/repronim/reproin)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+- <img src='./images/logo_python.png' width='14px'>  [SAMRI](https://doi.org/10.3389/fninf.2020.00005): Full stack Small Animal MRI data analysis package, including the `bru2bids` repositing pipeline, which can convert Bruker archives to the BIDS format. From the ETH and University of Zurich, with collaboration from MIT and Dartmouth College.
+  <br>![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/IBT-FMI/SAMRI?style=plastic)](https://github.com/IBT-FMI/SAMRI)
+-  [XNAT2BIDS](https://github.com/kamillipi/2bids): Simple xnat pipeline to convert DICOM scans to BIDS-compatible output (nii+json).
+  <br>![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/kamillipi/2bids?style=plastic)](https://github.com/kamillipi/2bids)
+
+ ### MEEG
+
+- <img src='./images/logo_python.png' width='14px'>  [BIDSme](https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1):
+  <br>[![Last commit](https://img.shields.io/github/last-commit/nbeliy/bidsme?style=plastic)](https://github.com/nbeliy/bidsme)[![License: GPL-2.0](https://img.shields.io/badge/License-GPLv2-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-2.0)
+- <img src='./images/logo_python.png' width='14px'>  [Biscuit](https://macquarie-meg-research.github.io/Biscuit/): GUI for easy MEG to BIDS conversion
+  <br>[![Last commit](https://img.shields.io/github/last-commit/Macquarie-MEG-Research/Biscuit?style=plastic)](https://github.com/Macquarie-MEG-Research/Biscuit)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+- <img src='./images/logo_python.png' width='14px'>  [EEG2BIDS](None): A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and Imaging System).
+  <br>![](https://img.shields.io/badge/Javascript-yellow.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/aces/EEG2BIDS?style=plastic)](https://github.com/aces/EEG2BIDS)
+- <img src='./images/logo_matlab.png' width='17px'>  [EEGLAB](https://eeglab.org/tutorials/04_Import/BIDS.html): <a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See plugins</a>
+  <br>[![Last commit](https://img.shields.io/github/last-commit/sccn/eeglab?style=plastic)](https://github.com/sccn/eeglab)
+- <img src='./images/logo_matlab.png' width='17px'>  [FieldTrip - data2bids](https://www.fieldtriptoolbox.org/example/bids/):
+  <br>[![Last commit](https://img.shields.io/github/last-commit/fieldtrip/fieldtrip?style=plastic)](https://github.com/fieldtrip/fieldtrip)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
+- <img src='./images/logo_python.png' width='14px'>  [MNE-BIDS](https://mne.tools/mne-bids): MNE-BIDS is a Python package that allows you to read and write BIDS-compatible datasets with the help of MNE-Python.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/mne-tools/mne-bids?style=plastic)](https://github.com/mne-tools/mne-bids)[![PyPI version](https://badge.fury.io/py/mne-bids.svg)](https://pypi.org/project/mne-bids)[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=plastic)](https://opensource.org/licenses/BSD-3-Clause)
+- <img src='./images/logo_python.png' width='14px'>  [sovabids](https://sovabids.readthedocs.io/en/latest/): A Python package for the automatic conversion of EEG datasets to the BIDS standard, with a focus on making the most out of metadata.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/yjmantilla/sovabids?style=plastic)](https://github.com/yjmantilla/sovabids)
+
+ ### physiological
+
+- <img src='./images/logo_python.png' width='14px'>  [BIDScoin](https://bidscoin.readthedocs.io/en/stable/): BIDScoin converts your source-level neuroimaging data to BIDS
+  <br>[![Last commit](https://img.shields.io/github/last-commit/Donders-Institute/bidscoin?style=plastic)](https://github.com/Donders-Institute/bidscoin)[![PyPI version](https://badge.fury.io/py/bidscoin.svg)](https://pypi.org/project/bidscoin)
+- <img src='./images/logo_python.png' width='14px'>  [bidsphysio](None): Converts physio data (CMRR, AcqKnowledge, Siemens PMU) to BIDS physiological recording
+  <br>[![Last commit](https://img.shields.io/github/last-commit/cbinyu/bidsphysio?style=plastic)](https://github.com/cbinyu/bidsphysio)[![PyPI version](https://badge.fury.io/py/bidsphysio.svg)](https://pypi.org/project/bidsphysio/)[![Docker version](https://img.shields.io/docker/pulls/cbinyu/bidsphysio.svg?style=plastic)](https://hub.docker.com/r/cbinyu/bidsphysio/)
+- <img src='./images/logo_python.png' width='14px'>  [phys2bids](https://phys2bids.readthedocs.io/en/latest/): Python3 library to format physiological files in BIDS.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/physiopy/phys2bids?style=plastic)](https://github.com/physiopy/phys2bids)[![PyPI version](https://badge.fury.io/py/phys2bids.svg)](https://pypi.org/project/phys2bids)
+
+ ### others
+
+- <img src='./images/logo_python.png' width='14px'>  [convert-eprime](https://github.com/tsalo/convert-eprime): Python functions to convert E-Prime files to csvs. Not currently being developed.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/tsalo/convert-eprime?style=plastic)](https://github.com/tsalo/convert-eprime)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+-  [DCM2NIIx](https://github.com/neurolabusc/dcm2niix): dcm2nii DICOM to NIfTI converter
+  <br>[![Last commit](https://img.shields.io/github/last-commit/neurolabusc/dcm2niix?style=plastic)](https://github.com/neurolabusc/dcm2niix)
+- <img src='./images/logo_matlab.png' width='17px'>  [DICM2NII](https://github.com/xiangruili/dicm2nii): dcm2nii DICOM to NIfTI converter
+  <br>[![Last commit](https://img.shields.io/github/last-commit/xiangruili/dicm2nii?style=plastic)](https://github.com/xiangruili/dicm2nii)
+- <img src='./images/logo_python.png' width='14px'>  [sim2bids](https://github.com/dissagaliyeva/sim2bids): GUI to easily convert simulation results to BIDS format, according to <a herf="https://bids.neuroimaging.io/bep034" target="_blank">   BEP 34 </a>.
+  <br>[![Last commit](https://img.shields.io/github/last-commit/dissagaliyeva/sim2bids?style=plastic)](https://github.com/dissagaliyeva/sim2bids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
+<!-- Converters ends -->
 
 
-## Contents
-
-- [Apps](#apps)
-- [Converters](#converters)
-- [Datasets](#datasets)
-- [Documentation](#documentation)
-- [BIDS Extension proposals](#extension-proposals)
-- [Tools](#tools)
-- [Contribute](#contribute)
-
-
-## Apps
+## BIDS Apps
 
 BIDS apps are containerized tools to automatically process BIDS datasets.
 For more information check the [BIDS Apps website](https://bids-apps.neuroimaging.io/apps/).
@@ -119,148 +246,6 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
   <br>[![Docker version](https://img.shields.io/docker/pulls/trends/gift-bids.svg?style=plastic)](https://hub.docker.com/r/trends/gift-bids)
 <!-- APP ends -->
 
-
-## Datasets
-
-
-<!-- TODO -->
-
-## Converters
-
-Tools for converting data to/from BIDS from other standard or custom formats and layouts.
-
-<!-- Converters starts -->
-
- ### MRI
-
--  [Autobids](https://github.com/khanlab/autobids): Automated Dicom to BIDS and pipelines using compute canada. From the Center for Functional and Metabolic Mapping (CFMM) at Western’s Robarts Research Institute.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/khanlab/autobids?style=plastic)](https://github.com/khanlab/autobids)
-- <img src='./images/logo_python.png' width='14px'>  [BIDScoin](https://bidscoin.readthedocs.io/en/stable/): BIDScoin converts your source-level neuroimaging data to BIDS
-  <br>[![Last commit](https://img.shields.io/github/last-commit/Donders-Institute/bidscoin?style=plastic)](https://github.com/Donders-Institute/bidscoin)[![PyPI version](https://badge.fury.io/py/bidscoin.svg)](https://pypi.org/project/bidscoin)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
-- <img src='./images/logo_R.png' width='18px'>  [BIDSconvertR](https://bidsconvertr.github.io/): The BIDSconvertR R package provides a user-friendly workflow with graphical user interfaces. It consists of the following steps: (i) convert DICOM data to NIfTI data using dcm2niix (ii) structure this data according to the BIDS specification (iii) provide the papayaWidget viewer for inspecting the images
-  <br>[![Last commit](https://img.shields.io/github/last-commit/bidsconvertr/bidsconvertr?style=plastic)](https://github.com/bidsconvertr/bidsconvertr)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
-- <img src='./images/logo_python.png' width='14px'>  [bidsify](https://github.com/NILAB-UvA/bidsify): Tool to convert source MRI datasets to BIDS-compatible datasets.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/NILAB-UvA/bidsify?style=plastic)](https://github.com/NILAB-UvA/bidsify)[![PyPI version](https://badge.fury.io/py/bidsify.svg)](https://pypi.org/project/bidsify)[![Docker version](https://img.shields.io/docker/pulls/lukassnoek/bidsify.svg?style=plastic)](https://hub.docker.com/r/lukassnoek/bidsify)
-- <img src='./images/logo_python.png' width='14px'>  [bidskit](https://github.com/jmtyszka/bidskit/blob/master/docs/QuickStart.md): Utility functions for working with DICOM and BIDS neuroimaging data.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/jmtyszka/bidskit?style=plastic)](https://github.com/jmtyszka/bidskit)[![PyPI version](https://badge.fury.io/py/bidskit.svg)](https://pypi.org/project/bidskit)[![Docker version](https://img.shields.io/docker/pulls/jmtyszka/bidskit.svg?style=plastic)](https://hub.docker.com/r/jmtyszka/bidskit)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-- <img src='./images/logo_python.png' width='14px'>  [BIDSme](https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1):
-  <br>[![Last commit](https://img.shields.io/github/last-commit/nbeliy/bidsme?style=plastic)](https://github.com/nbeliy/bidsme)[![License: GPL-2.0](https://img.shields.io/badge/License-GPLv2-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-2.0)
-- <img src='./images/logo_python.png' width='14px'>  [BMAT](https://github.com/ColinVDB/BMAT):
-  <br>[![Last commit](https://img.shields.io/github/last-commit/ColinVDB/BMAT?style=plastic)](https://github.com/ColinVDB/BMAT)[![Docker version](https://img.shields.io/docker/pulls/colinvdb/bmat-dcm2niix.svg?style=plastic)](https://hub.docker.com/r/colinvdb/bmat-dcm2niix)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
-- <img src='./images/logo_python.png' width='14px'>  [BrkRaw](https://github.com/BrkRaw/brkraw): For a preclinical Bruker MRI scanner
-  <br>[![Last commit](https://img.shields.io/github/last-commit/BrkRaw/brkraw?style=plastic)](https://github.com/BrkRaw/brkraw)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
-- <img src='./images/logo_python.png' width='14px'>  [Clinica](https://aramislab.paris.inria.fr/clinica/docs/public/latest/):
-  <br>[![Last commit](https://img.shields.io/github/last-commit/aramis-lab/clinica?style=plastic)](https://github.com/aramis-lab/clinica)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-- <img src='./images/logo_python.png' width='14px'>  [dac2bids](https://github.com/dangom/dac2bids): Create a BIDS structure for a DICOM folder.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/dangom/dac2bids?style=plastic)](https://github.com/dangom/dac2bids)
-- <img src='./images/logo_python.png' width='14px'>  [Data2Bids](https://github.com/SIMEXP/Data2Bids): Converts MRI files from extension supported by nibabel into NIfTI and convert them to BIDS
-  <br>[![Last commit](https://img.shields.io/github/last-commit/SIMEXP/Data2Bids?style=plastic)](https://github.com/SIMEXP/Data2Bids)[![PyPI version](https://badge.fury.io/py/data2bids.svg)](https://pypi.org/project/data2bids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-- <img src='./images/logo_python.png' width='14px'>  [Dcm2Bids](https://unfmontreal.github.io/Dcm2Bids/): converts DICOM files using dcm2niix into BIDS
-  <br>[![Last commit](https://img.shields.io/github/last-commit/cbedetti/Dcm2Bids?style=plastic)](https://github.com/cbedetti/Dcm2Bids)[![PyPI version](https://badge.fury.io/py/Dcm2Bids.svg)](https://pypi.org/project/Dcm2Bids)[![Docker version](https://img.shields.io/docker/pulls/unfmontreal/dcm2bids.svg?style=plastic)](https://hub.docker.com/r/unfmontreal/dcm2bids)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
-- <img src='./images/logo_matlab.png' width='17px'>  [Explore ASL](https://exploreasl.github.io/Documentation/1.8.0/Tutorials-ASL-BIDS/): Convert DICOM and NIFTI data to the ASL-BIDS format.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/ExploreASL/ExploreASL?style=plastic)](https://github.com/ExploreASL/ExploreASL)
-- <img src='./images/logo_python.png' width='14px'>  [ezBIDS](https://brainlife.io/docs/using_ezBIDS/): A web-based BIDS conversion tool with four unique features: (1) No installation or programming requirements. (2) Handling of both imaging and task events data and metadata. (3) Semi-automated inference and guidance for adherence to BIDS. (4) Multiple data management options, including download BIDS data to local system, or transfer to OpenNeuro.org or to brainlife.io.
-  <br>![](https://img.shields.io/badge/Javascript-yellow.svg?style=plastic)![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/brainlife/ezbids?style=plastic)](https://github.com/brainlife/ezbids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-- <img src='./images/logo_python.png' width='14px'>  [HeuDiConv](https://heudiconv.readthedocs.io/): A flexible DICOM converter for organizing brain imaging data into structured directory layouts
-  <br>[![Last commit](https://img.shields.io/github/last-commit/nipy/heudiconv?style=plastic)](https://github.com/nipy/heudiconv)[![PyPI version](https://badge.fury.io/py/heudiconv.svg)](https://pypi.org/project/heudiconv)[![Docker version](https://img.shields.io/docker/pulls/nipy/heudiconv.svg?style=plastic)](https://hub.docker.com/r/nipy/heudiconv)[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=plastic)](https://opensource.org/licenses/Apache-2.0)
--  [Horos (Osirix) export plugin](https://github.com/mslw/horos-bids-output): Horos plugin for BIDS output.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/mslw/horos-bids-output?style=plastic)](https://github.com/mslw/horos-bids-output)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
-- <img src='./images/logo_python.png' width='14px'>  [niix2bids](https://github.com/benoitberanger/niix2bids): Use this package as a command line to organize your Nifti dataset into BIDS.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/benoitberanger/niix2bids?style=plastic)](https://github.com/benoitberanger/niix2bids)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
--  [OpenfMRI2BIDS](https://github.com/bids-standard/openfmri2bids): Convert OpenfMRI dataset to BIDS
-  <br>[![Last commit](https://img.shields.io/github/last-commit/bids-standard/openfmri2bids?style=plastic)](https://github.com/bids-standard/openfmri2bids)
-- <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_python.png' width='14px'>  [PET2BIDS](https://github.com/openneuropet/PET2BIDS): Helps you convert your PET data! raw PET scanner files (for example ecat, dicom) and additional side file like excel sheets.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/openneuropet/PET2BIDS?style=plastic)](https://github.com/openneuropet/PET2BIDS)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-- <img src='./images/logo_python.png' width='14px'>  [ReproIn](https://github.com/ReproNim/reproin): HeuDiConv-based turnkey solution: a setup for automatic generation of shareable, version-controlled BIDS datasets from MR scanners.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/ReproNim/reproin?style=plastic)](https://github.com/ReproNim/reproin)[![Docker version](https://img.shields.io/docker/pulls/repronim/reproin.svg?style=plastic)](https://hub.docker.com/r/repronim/reproin)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-- <img src='./images/logo_python.png' width='14px'>  [SAMRI](https://doi.org/10.3389/fninf.2020.00005): Full stack Small Animal MRI data analysis package, including the `bru2bids` repositing pipeline, which can convert Bruker archives to the BIDS format. From the ETH and University of Zurich, with collaboration from MIT and Dartmouth College.
-  <br>![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/IBT-FMI/SAMRI?style=plastic)](https://github.com/IBT-FMI/SAMRI)
--  [XNAT2BIDS](https://github.com/kamillipi/2bids): Simple xnat pipeline to convert DICOM scans to BIDS-compatible output (nii+json).
-  <br>![](https://img.shields.io/badge/shell-black.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/kamillipi/2bids?style=plastic)](https://github.com/kamillipi/2bids)
-
- ### MEEG
-
-- <img src='./images/logo_python.png' width='14px'>  [BIDSme](https://gitlab.uliege.be/CyclotronResearchCentre/Public/bidstools/bidsme/bidsme_example/-/tree/master/example1):
-  <br>[![Last commit](https://img.shields.io/github/last-commit/nbeliy/bidsme?style=plastic)](https://github.com/nbeliy/bidsme)[![License: GPL-2.0](https://img.shields.io/badge/License-GPLv2-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-2.0)
-- <img src='./images/logo_python.png' width='14px'>  [Biscuit](https://macquarie-meg-research.github.io/Biscuit/): GUI for easy MEG to BIDS conversion
-  <br>[![Last commit](https://img.shields.io/github/last-commit/Macquarie-MEG-Research/Biscuit?style=plastic)](https://github.com/Macquarie-MEG-Research/Biscuit)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-- <img src='./images/logo_python.png' width='14px'>  [EEG2BIDS](None): A tool for converting raw EEG and iEEG data into the BIDS standard data structure, prepared for LORIS (Longitudinal Online Research and Imaging System).
-  <br>![](https://img.shields.io/badge/Javascript-yellow.svg?style=plastic)[![Last commit](https://img.shields.io/github/last-commit/aces/EEG2BIDS?style=plastic)](https://github.com/aces/EEG2BIDS)
-- <img src='./images/logo_matlab.png' width='17px'>  [EEGLAB](https://eeglab.org/tutorials/04_Import/BIDS.html): <a href='https://github.com/arnodelorme/bids-MATLAB-tools'>See plugins</a>
-  <br>[![Last commit](https://img.shields.io/github/last-commit/sccn/eeglab?style=plastic)](https://github.com/sccn/eeglab)
-- <img src='./images/logo_matlab.png' width='17px'>  [FieldTrip - data2bids](https://www.fieldtriptoolbox.org/example/bids/):
-  <br>[![Last commit](https://img.shields.io/github/last-commit/fieldtrip/fieldtrip?style=plastic)](https://github.com/fieldtrip/fieldtrip)[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg?style=plastic)](https://www.gnu.org/licenses/gpl-3.0)
-- <img src='./images/logo_python.png' width='14px'>  [MNE-BIDS](https://mne.tools/mne-bids): MNE-BIDS is a Python package that allows you to read and write BIDS-compatible datasets with the help of MNE-Python.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/mne-tools/mne-bids?style=plastic)](https://github.com/mne-tools/mne-bids)[![PyPI version](https://badge.fury.io/py/mne-bids.svg)](https://pypi.org/project/mne-bids)[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=plastic)](https://opensource.org/licenses/BSD-3-Clause)
-- <img src='./images/logo_python.png' width='14px'>  [sovabids](https://sovabids.readthedocs.io/en/latest/): A Python package for the automatic conversion of EEG datasets to the BIDS standard, with a focus on making the most out of metadata.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/yjmantilla/sovabids?style=plastic)](https://github.com/yjmantilla/sovabids)
-
- ### physiological
-
-- <img src='./images/logo_python.png' width='14px'>  [BIDScoin](https://bidscoin.readthedocs.io/en/stable/): BIDScoin converts your source-level neuroimaging data to BIDS
-  <br>[![Last commit](https://img.shields.io/github/last-commit/Donders-Institute/bidscoin?style=plastic)](https://github.com/Donders-Institute/bidscoin)[![PyPI version](https://badge.fury.io/py/bidscoin.svg)](https://pypi.org/project/bidscoin)
-- <img src='./images/logo_python.png' width='14px'>  [bidsphysio](None): Converts physio data (CMRR, AcqKnowledge, Siemens PMU) to BIDS physiological recording
-  <br>[![Last commit](https://img.shields.io/github/last-commit/cbinyu/bidsphysio?style=plastic)](https://github.com/cbinyu/bidsphysio)[![PyPI version](https://badge.fury.io/py/bidsphysio.svg)](https://pypi.org/project/bidsphysio/)[![Docker version](https://img.shields.io/docker/pulls/cbinyu/bidsphysio.svg?style=plastic)](https://hub.docker.com/r/cbinyu/bidsphysio/)
-- <img src='./images/logo_python.png' width='14px'>  [phys2bids](https://phys2bids.readthedocs.io/en/latest/): Python3 library to format physiological files in BIDS.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/physiopy/phys2bids?style=plastic)](https://github.com/physiopy/phys2bids)[![PyPI version](https://badge.fury.io/py/phys2bids.svg)](https://pypi.org/project/phys2bids)
-
- ### others
-
-- <img src='./images/logo_python.png' width='14px'>  [convert-eprime](https://github.com/tsalo/convert-eprime): Python functions to convert E-Prime files to csvs. Not currently being developed.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/tsalo/convert-eprime?style=plastic)](https://github.com/tsalo/convert-eprime)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
--  [DCM2NIIx](https://github.com/neurolabusc/dcm2niix): dcm2nii DICOM to NIfTI converter
-  <br>[![Last commit](https://img.shields.io/github/last-commit/neurolabusc/dcm2niix?style=plastic)](https://github.com/neurolabusc/dcm2niix)
-- <img src='./images/logo_matlab.png' width='17px'>  [DICM2NII](https://github.com/xiangruili/dicm2nii): dcm2nii DICOM to NIfTI converter
-  <br>[![Last commit](https://img.shields.io/github/last-commit/xiangruili/dicm2nii?style=plastic)](https://github.com/xiangruili/dicm2nii)
-- <img src='./images/logo_python.png' width='14px'>  [sim2bids](https://github.com/dissagaliyeva/sim2bids): GUI to easily convert simulation results to BIDS format, according to <a herf="https://bids.neuroimaging.io/bep034" target="_blank">   BEP 34 </a>.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/dissagaliyeva/sim2bids?style=plastic)](https://github.com/dissagaliyeva/sim2bids)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic)](https://opensource.org/licenses/MIT)
-<!-- Converters ends -->
-
-## Documentation
-
-Documentation and publications related to BIDS.
-
-- [BIDS Specification](https://bids-specification.readthedocs.io)
-- [BIDS Starter Kit](https://bids-standard.github.io/bids-starter-kit/)
-- [FieldTrip](https://www.fieldtriptoolbox.org/example/bids/) examples, mainly for MEG, EEG, fNIRS, etc.
-- ...
-
-## Extension proposals
-
-Ongoing community proposals for extending the BIDS specification or interoperating with BIDS datasets.
-
-<!-- BEP starts -->
-
- ### raw
-
-- [BEP004](https://bids.neuroimaging.io/bep004): Susceptibility Weighted Imaging (SWI)
-- [BEP020](https://bids.neuroimaging.io/bep020): Eye Tracking including Gaze Position and Pupil Size
-- [BEP022](https://bids.neuroimaging.io/bep022): Magnetic Resonance Spectroscopy (MRS)
-- [BEP024](https://bids.neuroimaging.io/bep024): Computed Tomography scan (CT)
-- [BEP026](https://bids.neuroimaging.io/bep026): Microelectrode Recordings
-- [BEP032](https://bids.neuroimaging.io/bep032): Animal electrophysiology
-- [BEP033](https://bids.neuroimaging.io/bep033): Advanced Diffusion Weighted Imaging (aDWI)
-- [BEP036](https://bids.neuroimaging.io/bep036): Phenotypic Data Guidelines
-- [BEP037](https://bids.neuroimaging.io/bep037): Non-Invasive Brain Stimulation (NIBS)
-- [BEP038](https://bids.neuroimaging.io/bep038): Atlases
-- [BEP039](https://bids.neuroimaging.io/bep039): Dimensionality reduction-based networks
-- [BEP040](https://bids.neuroimaging.io/bep040): Functional Ultrasound (fUS)
-
- ### derivative
-
-- [BEP011](https://bids.neuroimaging.io/bep011): Structural preprocessing derivatives
-- [BEP012](https://bids.neuroimaging.io/bep012): Functional preprocessing derivatives
-- [BEP014](https://bids.neuroimaging.io/bep014): Affine transformations and nonlinear field warps
-- [BEP016](https://bids.neuroimaging.io/bep016): Diffusion weighted imaging derivatives
-- [BEP017](https://bids.neuroimaging.io/bep017): Generic BIDS connectivity data schema
-- [BEP021](https://bids.neuroimaging.io/bep021): Common Electrophysiological Derivatives
-- [BEP023](https://bids.neuroimaging.io/bep023): PET Preprocessing derivatives
-- [BEP034](https://bids.neuroimaging.io/bep034): Computational modeling
-- [BEP035](https://bids.neuroimaging.io/bep035): Modular extensions for individual participant data mega-analyses with non-compliant derivatives
-- [BEP041](https://bids.neuroimaging.io/bep041): Statistical Model Derivatives
-<!-- BEP ends -->
-
-
 ## Tools
 
 Software packages for working with BIDS datasets.
@@ -311,6 +296,71 @@ Software packages for working with BIDS datasets.
   <br>[![Last commit](https://img.shields.io/github/last-commit/cpp-lln-lab/spm_2_bids?style=plastic)](https://github.com/cpp-lln-lab/spm_2_bids)
 <!-- TOOLS ends -->
 
+## Code
+
+Most of the repositories for BIDS are centralized in:
+
+- the [BIDS standard github organization](https://github.com/bids-standard)
+- the [BIDS-app github organization](https://github.com/bids-apps)
+
+Make sure to also check repositories tagged for the following topics:
+
+- on GitHub:
+
+  - [BIDS](https://github.com/topics/bids)
+  - [BIDS-Apps](https://github.com/topics/bidsapp)
+  - [bids-format](https://github.com/topics/bids-format)
+
+- on GitLab:
+
+  - [BIDS](https://gitlab.com/search?search=bids&nav_source=navbar)
+
+## BIDS Extension Proposals (BEP)
+
+Ongoing community proposals for extending the BIDS specification to new datatypes ([raw](#raw)),
+to specify how to organized processed data ([derivatives](#derivatives)),
+or interoperating with BIDS datasets.
+
+Make sure to check the list to see if some people are not already working
+on making sure BIDS supports your favorite datatype.
+
+If you are working on an extension proposal
+make sure to check our [documentation regarding the BIDS extension proposal process](https://bids-extensions.readthedocs.io/).
+
+<!-- BEP starts -->
+
+ ### raw
+
+- [BEP004](https://bids.neuroimaging.io/bep004): Susceptibility Weighted Imaging (SWI)
+- [BEP020](https://bids.neuroimaging.io/bep020): Eye Tracking including Gaze Position and Pupil Size
+- [BEP022](https://bids.neuroimaging.io/bep022): Magnetic Resonance Spectroscopy (MRS)
+- [BEP024](https://bids.neuroimaging.io/bep024): Computed Tomography scan (CT)
+- [BEP026](https://bids.neuroimaging.io/bep026): Microelectrode Recordings
+- [BEP032](https://bids.neuroimaging.io/bep032): Animal electrophysiology
+- [BEP033](https://bids.neuroimaging.io/bep033): Advanced Diffusion Weighted Imaging (aDWI)
+- [BEP036](https://bids.neuroimaging.io/bep036): Phenotypic Data Guidelines
+- [BEP037](https://bids.neuroimaging.io/bep037): Non-Invasive Brain Stimulation (NIBS)
+- [BEP038](https://bids.neuroimaging.io/bep038): Atlases
+- [BEP039](https://bids.neuroimaging.io/bep039): Dimensionality reduction-based networks
+- [BEP040](https://bids.neuroimaging.io/bep040): Functional Ultrasound (fUS)
+
+ ### derivative
+
+- [BEP011](https://bids.neuroimaging.io/bep011): Structural preprocessing derivatives
+- [BEP012](https://bids.neuroimaging.io/bep012): Functional preprocessing derivatives
+- [BEP014](https://bids.neuroimaging.io/bep014): Affine transformations and nonlinear field warps
+- [BEP016](https://bids.neuroimaging.io/bep016): Diffusion weighted imaging derivatives
+- [BEP017](https://bids.neuroimaging.io/bep017): Generic BIDS connectivity data schema
+- [BEP021](https://bids.neuroimaging.io/bep021): Common Electrophysiological Derivatives
+- [BEP023](https://bids.neuroimaging.io/bep023): PET Preprocessing derivatives
+- [BEP034](https://bids.neuroimaging.io/bep034): Computational modeling
+- [BEP035](https://bids.neuroimaging.io/bep035): Modular extensions for individual participant data mega-analyses with non-compliant derivatives
+- [BEP041](https://bids.neuroimaging.io/bep041): Statistical Model Derivatives
+<!-- BEP ends -->
+
+## Publications
+
+BIDS references are centralized in [our zotero group](https://www.zotero.org/groups/5111637/bids).
 
 ## Contribute
 
