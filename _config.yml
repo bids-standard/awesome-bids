@@ -1,9 +1,0 @@
----
-theme: jekyll-theme-architect
-
-title: awesome BIDS
-description: List of BIDS resources
-
-exclude:
--   bids-website
--   bids-apps.github.io

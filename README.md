@@ -50,7 +50,7 @@ Here are the official BIDS account on several social media.
 
 ## Datasets
 
-- The [BIDS examples](https://bids-standard.github.io/bids-examples/) host dataset of each modality.
+- The [BIDS examples](https://bids-standard.github.io/bids-examples/) repository hosts dataset of each modality
   with empty raw data files. These datasets can be useful to:
   - serve as an example on how a BIDS dataset can be structured
   - write lightweight software tests
