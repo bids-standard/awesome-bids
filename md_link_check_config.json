@@ -1,0 +1,15 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^https://twitter.com/.*"
+    },
+    {
+      "pattern": "^https://gitlab.com/search?search=bids&nav_source=navbar$"
+    },
+    {
+      "pattern": "^None$"
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true
+}
