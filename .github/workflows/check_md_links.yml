@@ -18,4 +18,3 @@ jobs:
                 use-verbose-mode: yes
                 folder-path: src
                 config-file: md_link_check_config.json
-                file-path: ./README.md

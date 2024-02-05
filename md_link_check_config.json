@@ -4,7 +4,7 @@
       "pattern": "^https://twitter.com/.*"
     },
     {
-      "pattern": "^https://gitlab.com/search?search=bids&nav_source=navbar$"
+      "pattern": "^https://gitlab.com/search.*"
     },
     {
       "pattern": "^None$"
