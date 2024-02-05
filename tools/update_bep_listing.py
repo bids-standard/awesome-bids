@@ -4,8 +4,7 @@ from __future__ import annotations
 
 from rich import print
 from ruamel.yaml import YAML
-from utils import bids_website_data
-from utils import readme_file
+from utils import bids_website_data, readme_file
 
 yaml = YAML(typ="safe")
 
