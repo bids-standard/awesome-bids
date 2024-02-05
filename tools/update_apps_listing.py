@@ -4,9 +4,7 @@ from __future__ import annotations
 
 from rich import print
 from ruamel.yaml import YAML
-from utils import BADGE_FORMAT
-from utils import readme_file
-from utils import root_dir
+from utils import BADGE_FORMAT, readme_file, root_dir
 
 yaml = YAML(typ="safe")
 

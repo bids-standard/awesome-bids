@@ -6,15 +6,17 @@ from pathlib import Path
 
 from rich import print
 from ruamel.yaml import YAML
-from utils import BADGE_FORMAT
-from utils import bids_website_data
-from utils import language_badge
-from utils import last_commit
-from utils import license_badge
-from utils import link
-from utils import logo
-from utils import pypi
-from utils import readme_file
+from utils import (
+    BADGE_FORMAT,
+    bids_website_data,
+    language_badge,
+    last_commit,
+    license_badge,
+    link,
+    logo,
+    pypi,
+    readme_file,
+)
 
 yaml = YAML(typ="safe")
 

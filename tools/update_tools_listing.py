@@ -4,12 +4,7 @@ from __future__ import annotations
 
 from rich import print
 from ruamel.yaml import YAML
-from utils import bids_website_data
-from utils import last_commit
-from utils import link
-from utils import logo
-from utils import pypi
-from utils import readme_file
+from utils import bids_website_data, last_commit, link, logo, pypi, readme_file
 
 yaml = YAML(typ="safe")
 
