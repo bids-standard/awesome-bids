@@ -3,9 +3,9 @@ name: Check Markdown links
 
 on:
     push:
-        branches: [gh-pages]
+        branches: [main]
     pull_request:
-        branches: [gh-pages]
+        branches: '*'
 
 jobs:
     markdown-link-check:
@@ -16,6 +16,5 @@ jobs:
             with:
                 use-quiet-mode: yes
                 use-verbose-mode: yes
+                folder-path: src
                 config-file: md_link_check_config.json
-                folder-path: _bep_collection, _data, _includes, _layouts, _pages, _posts, _redirects, _sass, assets, BIDS-materials
-                file-path: ./README.md

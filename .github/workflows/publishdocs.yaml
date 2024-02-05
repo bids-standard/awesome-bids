@@ -9,7 +9,6 @@ jobs:
     build:
         name: Deploy docs
         runs-on: ubuntu-latest
-        if: github.repository == 'nilearn/nilearn'
         steps:
         -   name: Checkout master
             uses: actions/checkout@v4
