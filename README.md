@@ -163,8 +163,6 @@ BIDS apps are containerized tools to automatically process BIDS datasets.
 For more information check the [BIDS Apps website](https://bids-apps.neuroimaging.io/apps/).
 
 <!-- APP starts -->
-- [aa](https://github.com/bids-apps/aa): BIDS App containing an instance of the Automatic Analysis
-  <br>[![Docker version](https://img.shields.io/docker/pulls/bids/aa.svg?style=plastic)](https://hub.docker.com/r/bids/aa)
 - [afni_proc](https://github.com/bids-apps/afni_proc): prototype AFNI bids app implementing participant level preprocessing with afni_proc.py
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/afni_proc.svg?style=plastic)](https://hub.docker.com/r/bids/afni_proc)
 - [antsCorticalThickness](https://github.com/bids-apps/antsCorticalThickness): BIDS App for calculating cortical thickness using ANTs
@@ -183,6 +181,8 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/dparsf.svg?style=plastic)](https://hub.docker.com/r/bids/dparsf)
 - [freesurfer](https://github.com/bids-apps/freesurfer): BIDS app wrapping recon-all from FreeSurfer
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/freesurfer.svg?style=plastic)](https://hub.docker.com/r/bids/freesurfer)
+- [giga_connectome](https://github.com/bids-apps/giga_connectome): This is a BIDS-App to extract signal from a parcellation with nilearn, typically useful in a context of resting-state data processing.
+  <br>[![Docker version](https://img.shields.io/docker/pulls/haotingwang/giga_connectome.svg?style=plastic)](https://hub.docker.com/r/haotingwang/giga_connectome)
 - [HCPPipelines](https://github.com/bids-apps/HCPPipelines): A BIDS App for minimal preprocessing using the HCP Pipelines
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/hcppipelines.svg?style=plastic)](https://hub.docker.com/r/bids/hcppipelines)
 - [hyperalignment](https://github.com/bids-apps/hyperalignment): Hyperalignment is a functional alignment method that aligns subjects' brain data in a high-dimensional space of voxels/features.
@@ -201,8 +201,6 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/pymvpa.svg?style=plastic)](https://hub.docker.com/r/bids/pymvpa)
 - [QAP](https://github.com/bids-apps/QAP): PCP Quality Assessment Protocol
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/qap.svg?style=plastic)](https://hub.docker.com/r/bids/qap)
-- [rs_signal_extract](https://github.com/bids-apps/rs_signal_extract): BIDS App for resting state signal extraction using nilearn.
-  <br>[![Docker version](https://img.shields.io/docker/pulls/bids/rs_signal_extract.svg?style=plastic)](https://hub.docker.com/r/bids/rs_signal_extract)
 - [rsHRF](https://github.com/bids-apps/rsHRF): Resting state HRF estimation from BOLD-fMRI signal
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/rshrf.svg?style=plastic)](https://hub.docker.com/r/bids/rshrf)
 - [SPM](https://github.com/bids-apps/SPM): BIDS App containing an instance of the SPM software.
@@ -223,7 +221,7 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
   <br>[![Docker version](https://img.shields.io/docker/pulls/khanlab/hippunfold.svg?style=plastic)](https://hub.docker.com/r/khanlab/hippunfold)
 - [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit): The Medical Image Analysis Laboratory Super-Resolution ToolKit (MIALSRTK) consists of a set of C++ and Python processing and workflow tools necessary to perform motion-robust super-resolution fetal MRI reconstruction in the BIDS Apps framework.
   <br>[![Docker version](https://img.shields.io/docker/pulls/sebastientourbier/mialsuperresolutiontoolkit.svg?style=plastic)](https://hub.docker.com/r/sebastientourbier/mialsuperresolutiontoolkit)
-- [micapipe](https://github.com/MICA-MNI/micapipe): micapipe from the Multimodal imaging and connectome analysis lab (http://mica-mni.github.io) at the Montreal Neurological Institute. Read The Docs documentation below
+- [micapipe](https://github.com/MICA-MNI/micapipe): micapipe from the Multimodal imaging and connectome analysis lab (https://mica-mni.github.io) at the Montreal Neurological Institute. Read The Docs documentation below
   <br>[![Docker version](https://img.shields.io/docker/pulls/micalab/micapipe.svg?style=plastic)](https://hub.docker.com/r/micalab/micapipe)
 - [dmriprep](https://github.com/nipreps/dmriprep): dMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse dMRI data. The transparent workflow dispenses of manual intervention, thereby ensuring the reproducibility of the results.
   <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/dmriprep.svg?style=plastic)](https://hub.docker.com/r/nipreps/dmriprep)
@@ -295,6 +293,7 @@ Software packages for working with BIDS datasets.
 - [OpenNeuro](http://openneuro.org): A free and open platform for validating and sharing BIDS-compliant data.
 - [PRFmodel](https://github.com/vistalab/PRFmodel/wiki): a set of tools to fit population receptive field models to BIDS datasets
   <br>[![Last commit](https://img.shields.io/github/last-commit/vistalab/PRFmodel?style=plastic)](https://github.com/vistalab/PRFmodel)
+- <img src='./images/logo_python.png' width='14px'> [psychopy-bids](https://gitlab.com/psygraz/psychopy-bids/): A psychopy plugin to help easily output a BIDS dataset, including `events.tsv` and `beh.tsv` files when running experiments with psychopy.
 - <img src='./images/logo_python.png' width='14px'> [PyBIDS](None): Python package to quickly parse / search the components of a BIDS dataset. It also contains functionality for running analyses on your data.
   <br>[![Last commit](https://img.shields.io/github/last-commit/bids-standard/pybids?style=plastic)](https://github.com/bids-standard/pybids) [![PyPI version](https://badge.fury.io/py/pybids.svg)](https://pypi.org/project/pybids/)
 - <img src='./images/logo_R.png' width='18px'> [rbids](https://github.com/mathesong/rbids): aims to make BIDS datasets more easily accessible for packages written in R
