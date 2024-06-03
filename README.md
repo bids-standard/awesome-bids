@@ -286,9 +286,9 @@ Software packages for working with BIDS datasets.
 - <img src='./images/logo_matlab.png' width='17px'> [Lead-DBS](https://www.lead-dbs.org/): A toolbox facilitating Deep Brain Stimulation electrode reconstructions  and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
 - <img src='./images/logo_python.png' width='14px'> [mne-bids](https://mne.tools/mne-bids/stable/index.html): collection of tools for converting magnetoencephalography (MEG) data into BIDS format, as well as some helper functions for creating the folders and metadata needed for a BIDS dataset.
   <br>[![Last commit](https://img.shields.io/github/last-commit/mne-tools/mne-bids?style=plastic)](https://github.com/mne-tools/mne-bids)
-- [neurobagel annotate](https://neurobagel.org/data_prep/): This tool allows you to create a machine readable data dictionary in .json format for a tabular phenotypic file in .tsv format ("Data table").
-- [neurobagel query](https://neurobagel.org/query_tool/): Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging parameters.
-- <img src='./images/logo_python.png' width='14px'> [nipopy](https://neurobagel.org/nipoppy/overview/): Lightweight neuroimaging workflow manager to help with DICOM to BIDS conversion and running BIDS apps.
+- [neurobagel annotate](http://neurobagel.org/data_prep/): This tool allows you to create a machine readable data dictionary in .json format for a tabular phenotypic file in .tsv format ("Data table").
+- [neurobagel query](http://neurobagel.org/query_tool/): Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging parameters.
+- <img src='./images/logo_python.png' width='14px'> [nipopy](http://neurobagel.org/nipoppy/overview/): Lightweight neuroimaging workflow manager to help with DICOM to BIDS conversion and running BIDS apps.
   <br>[![Last commit](https://img.shields.io/github/last-commit/neurodatascience/nipoppy?style=plastic)](https://github.com/neurodatascience/nipoppy)
 - [OpenNeuro](http://openneuro.org): A free and open platform for validating and sharing BIDS-compliant data.
 - [PRFmodel](https://github.com/vistalab/PRFmodel/wiki): a set of tools to fit population receptive field models to BIDS datasets
