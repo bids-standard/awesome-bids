@@ -84,7 +84,7 @@ def main():
                     ],
                     ["MRI", "MEEG", "physiological", "others"],
                 ):
-                    converters_file = bids_website_data() / file
+                    converters_file = bids_website_data() / "tools" / file
                     converters = load_converters(converters_file)
 
                     write_converters(readme, converters, section)

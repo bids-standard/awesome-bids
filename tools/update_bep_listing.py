@@ -23,7 +23,7 @@ def write_beps(f, beps: list[dict]) -> None:
 
 
 def main():
-    bep_file = bids_website_data() / "beps.yml"
+    bep_file = bids_website_data() / "beps" / "beps.yml"
     with open(bep_file, "r") as f:
         beps = yaml.load(f)
 

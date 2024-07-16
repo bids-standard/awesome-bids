@@ -23,7 +23,7 @@ def write_tools(f, tools: list[dict]) -> None:
 
 
 def main():
-    tool_file = bids_website_data() / "tools.yml"
+    tool_file = bids_website_data() / "tools" / "tools.yml"
     with open(tool_file, "r") as f:
         tools = yaml.load(f)
 

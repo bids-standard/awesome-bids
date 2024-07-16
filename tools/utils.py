@@ -17,7 +17,7 @@ def readme_file() -> Path:
 
 def bids_website_data() -> Path:
     """Return the folder containing the converters listings."""
-    return root_dir() / "bids-website" / "_data"
+    return root_dir() / "bids-website" / "data"
 
 
 def logo(tool: dict) -> str:
