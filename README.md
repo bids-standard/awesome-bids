@@ -34,7 +34,7 @@ Documentation related to BIDS.
   a google group for announcements and discussions around BIDS.
 
 - [BIDS in the Brainhack mattersmost](https://mattermost.brainhack.org/brainhack/channels/bids_general):
-  [mattermost](https://mattermost.com/) is the open source equivalent of slack
+  [mattermost](https://mattermost.brainhack.org) is the open source equivalent of slack
   and the [Brainhack](https://brainhack.org/) instance has over 5000 members
   with its own channel dedicated BIDS channel.
 
