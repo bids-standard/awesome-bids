@@ -296,6 +296,8 @@ Software packages for working with BIDS datasets.
 - <img src='./images/logo_R.png' width='18px'> [rbids](https://github.com/mathesong/rbids): aims to make BIDS datasets more easily accessible for packages written in R
   <br>[![Last commit](https://img.shields.io/github/last-commit/mathesong/rbids?style=plastic)](https://github.com/mathesong/rbids)
 - <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_octave.png' width='16px'> [spm_2_bids](https://spm-2-bids.readthedocs.io/en/latest/): a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012))
+- <img src='./images/logo_python.png' width='14px'> [mne-bids-pipeline](https://mne.tools/mne-bids-pipeline): A fully automated pipeline for MEEG preprocessing and analysis using MNE.
+
   <br>[![Last commit](https://img.shields.io/github/last-commit/cpp-lln-lab/spm_2_bids?style=plastic)](https://github.com/cpp-lln-lab/spm_2_bids)
 <!-- TOOLS ends -->
 
