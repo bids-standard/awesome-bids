@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from rich import print
 from ruamel.yaml import YAML
-from utils import BADGE_FORMAT, readme_file, root_dir
+from utils import BADGE_FORMAT, bids_website_data, readme_file
 
 yaml = YAML(typ="safe")
 
@@ -21,6 +21,7 @@ def write_apps(f, apps: list[dict]) -> None:
             continue
         if app_.get("status") in ["unmaintained"]:
             continue
+        print(f"adding: {app_['gh']}")
         f.write(
             f"- [{app_['gh'].split('/')[1]}](https://github.com/{app_['gh']}): {app_['description']}\n  <br>{docker_badge(app_)}\n"
         )
@@ -32,16 +33,16 @@ def docker_badge(app: dict):
 
 
 def main():
-    apps_file = root_dir() / "bids-apps.github.io" / "_config.yml"
-    with open(apps_file, "r") as f:
+    apps_file = bids_website_data() / "tools" / "apps.yml"
+    with apps_file.open("r") as f:
         apps = yaml.load(f)
         apps = apps["apps"]
 
     print(readme_file())
-    with open(readme_file(), "r") as f:
+    with readme_file().open("r") as f:
         readme = f.readlines()
 
-    with open(readme_file(), "w") as f:
+    with readme_file().open("w") as f:
         updating = False
 
         for line in readme:

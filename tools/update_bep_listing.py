@@ -17,6 +17,7 @@ def write_beps(f, beps: list[dict]) -> None:
 
         subset = [x for x in beps if section in x["content"]]
         for bep_ in subset:
+            print(f"adding BEP{bep_['number']}")
             f.write(
                 f"- [BEP{bep_['number']}](https://bids.neuroimaging.io/bep{bep_['number']}): {bep_['title']}\n"
             )

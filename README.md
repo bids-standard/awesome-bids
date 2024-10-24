@@ -180,7 +180,7 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
 - [freesurfer](https://github.com/bids-apps/freesurfer): BIDS app wrapping recon-all from FreeSurfer
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/freesurfer.svg?style=plastic)](https://hub.docker.com/r/bids/freesurfer)
 - [giga_connectome](https://github.com/bids-apps/giga_connectome): This is a BIDS-App to extract signal from a parcellation with nilearn, typically useful in a context of resting-state data processing.
-  <br>[![Docker version](https://img.shields.io/docker/pulls/haotingwang/giga_connectome.svg?style=plastic)](https://hub.docker.com/r/haotingwang/giga_connectome)
+  <br>[![Docker version](https://img.shields.io/docker/pulls/bids/giga_connectome.svg?style=plastic)](https://hub.docker.com/r/bids/giga_connectome)
 - [HCPPipelines](https://github.com/bids-apps/HCPPipelines): A BIDS App for minimal preprocessing using the HCP Pipelines
   <br>[![Docker version](https://img.shields.io/docker/pulls/bids/hcppipelines.svg?style=plastic)](https://hub.docker.com/r/bids/hcppipelines)
 - [hyperalignment](https://github.com/bids-apps/hyperalignment): Hyperalignment is a functional alignment method that aligns subjects' brain data in a high-dimensional space of voxels/features.
@@ -211,6 +211,8 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
   <br>[![Docker version](https://img.shields.io/docker/pulls/cpplab/bidsmreye.svg?style=plastic)](https://hub.docker.com/r/cpplab/bidsmreye)
 - [bidspm](https://github.com/cpp-lln-lab/bidspm): an SPM centric BIDS app
   <br>[![Docker version](https://img.shields.io/docker/pulls/cpplab/bidspm.svg?style=plastic)](https://hub.docker.com/r/cpplab/bidspm)
+- [BIBSnet](https://github.com/DCAN-Labs/BIBSnet): Utility for creating a nnU-Net anatomical MRI segmentation and mask with a infant brain trained model for the purposes of circumventing JLF within Nibabies.
+  <br>[![Docker version](https://img.shields.io/docker/pulls/dcanumn/bibsnet.svg?style=plastic)](https://hub.docker.com/r/dcanumn/bibsnet)
 - [fmriprep-fake](https://github.com/djarecka/fmriprep-fake): None
   <br>[![Docker version](https://img.shields.io/docker/pulls/djarecka/fmriprep_fake.svg?style=plastic)](https://hub.docker.com/r/djarecka/fmriprep_fake)
 - [funcmasker-flex](https://github.com/khanlab/funcmasker-flex): BIDS App for U-net brain masking of fetal bold MRI
@@ -223,6 +225,12 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
   <br>[![Docker version](https://img.shields.io/docker/pulls/micalab/micapipe.svg?style=plastic)](https://hub.docker.com/r/micalab/micapipe)
 - [dmriprep](https://github.com/nipreps/dmriprep): dMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse dMRI data. The transparent workflow dispenses of manual intervention, thereby ensuring the reproducibility of the results.
   <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/dmriprep.svg?style=plastic)](https://hub.docker.com/r/nipreps/dmriprep)
+- [fmripost-aroma](https://github.com/nipreps/fmripost-aroma): Functional MRI postprocessing with ICA-AROMA
+  <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/fmripost-aroma.svg?style=plastic)](https://hub.docker.com/r/nipreps/fmripost-aroma)
+- [fmripost-phase](https://github.com/nipreps/fmripost-phase): Postprocessing of complex-valued fMRI data
+  <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/fmripost-phase.svg?style=plastic)](https://hub.docker.com/r/nipreps/fmripost-phase)
+- [fmripost-rapidtide](https://github.com/nipreps/fmripost-rapidtide): Functional MRI postprocessing with Rapidtide
+  <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/fmripost-rapidtide.svg?style=plastic)](https://hub.docker.com/r/nipreps/fmripost-rapidtide)
 - [fmriprep](https://github.com/nipreps/fmriprep): fMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse fMRI data. The transparent workflow dispenses of manual intervention, thereby ensuring the reproducibility of the results.
   <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/fmriprep.svg?style=plastic)](https://hub.docker.com/r/nipreps/fmriprep)
 - [mriqc](https://github.com/nipreps/mriqc): Automated Quality Control and visual reports for Quality Assessment of structural (T1w, T2w) and functional MRI of the brain
@@ -233,16 +241,22 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
   <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/nirodents.svg?style=plastic)](https://hub.docker.com/r/nipreps/nirodents)
 - [smriprep](https://github.com/nipreps/smriprep): Structural MRI PREProcessing (sMRIPrep) workflows for NIPreps (NeuroImaging PREProcessing tools)
   <br>[![Docker version](https://img.shields.io/docker/pulls/nipreps/smriprep.svg?style=plastic)](https://hub.docker.com/r/nipreps/smriprep)
+- [petdeface](https://github.com/openneuropet/petdeface): A nipype implementation of MiDeface used to deface PET and MR data as well as co-register the two modalities.
+  <br>[![Docker version](https://img.shields.io/docker/pulls/openneuropet/petdeface.svg?style=plastic)](https://hub.docker.com/r/openneuropet/petdeface)
 - [BIDSonym](https://github.com/PeerHerholz/BIDSonym): a BIDS app for pseudo-anonymization of neuroimaging data
   <br>[![Docker version](https://img.shields.io/docker/pulls/peerherholz/bidsonym.svg?style=plastic)](https://hub.docker.com/r/peerherholz/bidsonym)
 - [aslprep](https://github.com/PennLINC/aslprep): Preprocessing of arterial spin labeling data
   <br>[![Docker version](https://img.shields.io/docker/pulls/pennlinc/aslprep.svg?style=plastic)](https://hub.docker.com/r/pennlinc/aslprep)
-- [qsiprep](https://github.com/PennLINC/qsiprep): Preprocessing and reconstruction of diffusion MRI
+- [qsiprep](https://github.com/PennLINC/qsiprep): Preprocessing of diffusion MRI
   <br>[![Docker version](https://img.shields.io/docker/pulls/pennbbl/qsiprep.svg?style=plastic)](https://hub.docker.com/r/pennbbl/qsiprep)
+- [qsirecon](https://github.com/PennLINC/qsirecon): Reconstruction of preprocessed diffusion MRI
+  <br>[![Docker version](https://img.shields.io/docker/pulls/pennlinc/qsirecon.svg?style=plastic)](https://hub.docker.com/r/pennlinc/qsirecon)
 - [xcp_d](https://github.com/PennLINC/xcp_d): Post-processing of fMRIPrep, nibabies, HCP, and DCAN BOLD derivatives for functional connectivity analysis
   <br>[![Docker version](https://img.shields.io/docker/pulls/pennlinc/xcp_d.svg?style=plastic)](https://hub.docker.com/r/pennlinc/xcp_d)
 - [fitlins](https://github.com/poldracklab/fitlins): Fit Linear Models to BIDS Datasets
   <br>[![Docker version](https://img.shields.io/docker/pulls/poldracklab/fitlins.svg?style=plastic)](https://hub.docker.com/r/poldracklab/fitlins)
+- [reproa](https://github.com/reprostat/reproa): BIDS App containing an instance of the ReproAnalysis (reproa) software (core only) running under Octave with minimum dependencies.
+  <br>[![Docker version](https://img.shields.io/docker/pulls/reprostat/reproa.svg?style=plastic)](https://hub.docker.com/r/reprostat/reproa)
 - [multiscalebrainparcellator](https://github.com/sebastientourbier/multiscalebrainparcellator): Multi-Scale Brain Parcellator, part of the Connectome Mapping Toolkit (CMTK), is a BIDS App that implements a full anatomical MRI processing pipeline, from raw T1w data to structural brain parcellation at five different scales.
   <br>[![Docker version](https://img.shields.io/docker/pulls/sebastientourbier/multiscalebrainparcellator.svg?style=plastic)](https://hub.docker.com/r/sebastientourbier/multiscalebrainparcellator)
 - [gift-bids](https://github.com/trendscenter/gift-bids): None
@@ -336,7 +350,6 @@ make sure to check our [documentation regarding the BIDS extension proposal proc
 
 - [BEP004](https://bids.neuroimaging.io/bep004): Susceptibility Weighted Imaging
 - [BEP020](https://bids.neuroimaging.io/bep020): Eye Tracking including Gaze Position and Pupil Size
-- [BEP022](https://bids.neuroimaging.io/bep022): Magnetic Resonance Spectroscopy
 - [BEP024](https://bids.neuroimaging.io/bep024): Computed Tomography scan
 - [BEP026](https://bids.neuroimaging.io/bep026): Microelectrode Recordings
 - [BEP032](https://bids.neuroimaging.io/bep032): Animal electrophysiology
@@ -347,6 +360,7 @@ make sure to check our [documentation regarding the BIDS extension proposal proc
 - [BEP039](https://bids.neuroimaging.io/bep039): Dimensionality reduction-based networks
 - [BEP040](https://bids.neuroimaging.io/bep040): Functional Ultrasound
 - [BEP042](https://bids.neuroimaging.io/bep042): Electromyography
+- [BEP044](https://bids.neuroimaging.io/bep044): Stimuli
 
 ### derivative
 
