@@ -2,7 +2,3 @@
 	path = bids-website
 	url = https://github.com/bids-standard/bids-website.git
 	datalad-url = https://github.com/bids-standard/bids-website.git
-[submodule "bids-apps.github.io"]
-	path = bids-apps.github.io
-	url = https://github.com/bids-apps/bids-apps.github.io.git
-	datalad-url = https://github.com/bids-apps/bids-apps.github.io.git
