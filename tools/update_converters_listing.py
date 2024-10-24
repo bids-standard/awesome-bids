@@ -44,10 +44,13 @@ def write_converters(readme, converters: list[dict], section: str):
     # for a section of converters write info about each converter with badges below
     readme.write(f"\n### {section}\n\n")
 
-    converters = converters[0]["members"]
     sorted_converters = sorted(converters, key=lambda x: x["name"].lower())
 
     for converter_ in sorted_converters:
+        if section not in converter_["data_types"]:
+            continue
+        if converter_["status"] != "active":
+            continue
         print(converter_)
         readme.write(
             f"- {logo(converter_)} [{converter_['name']}]({link(converter_)}):{comment(converter_)}\n"
@@ -63,6 +66,14 @@ def load_converters(converters_file: Path) -> list[dict]:
 
 
 def main():
+    converters_file = bids_website_data() / "tools" / "converters.yml"
+    converters = load_converters(converters_file)
+
+    sections = []
+    for conv in converters:
+        sections.extend([data_type for data_type in conv["data_types"]])
+    sections = sorted(set(sections))
+
     with open(readme_file(), "r") as f:
         content = f.readlines()
 
@@ -74,16 +85,7 @@ def main():
                 updating = True
 
                 readme.write("<!-- Converters starts -->\n")
-
-                for file, section in zip(
-                    [
-                        "converters.yml",
-                    ],
-                    ["MRI", "MEEG", "physiological", "others"],
-                ):
-                    converters_file = bids_website_data() / "tools" / file
-                    converters = load_converters(converters_file)
-
+                for section in sections:
                     write_converters(readme, converters, section)
 
             if line.startswith("<!-- Converters ends -->"):

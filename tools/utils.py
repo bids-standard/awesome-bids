@@ -51,7 +51,9 @@ def logo(tool: dict) -> str:
 def link(tool: dict) -> str:
     if "documentation" in tool:
         return tool["documentation"]
-    return tool["repo_url"]
+    if "repo_url" in tool:
+        return tool["repo_url"]
+    return tool["url"]
 
 
 def last_commit(tool: dict) -> str:
