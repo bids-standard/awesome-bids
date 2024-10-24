@@ -78,9 +78,6 @@ def main():
                 for file, section in zip(
                     [
                         "converters.yml",
-                        "MEEG_converters.yml",
-                        "physio_converters.yml",
-                        "other_converters.yml",
                     ],
                     ["MRI", "MEEG", "physiological", "others"],
                 ):

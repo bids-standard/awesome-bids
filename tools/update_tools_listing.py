@@ -17,6 +17,7 @@ def write_tools(f, tools: list[dict]) -> None:
     for tool_ in tools:
         badges = f"{last_commit(tool_)} {pypi(tool_)}"
         badges = f"  <br>{badges}\n" if badges not in ["", " "] else ""
+        print(f"adding {tool_['name']}")
         f.write(
             f"- {logo(tool_)}[{tool_['name']}]({link(tool_)}): {tool_['description'].strip()}\n{badges}"
         )

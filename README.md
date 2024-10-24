@@ -268,49 +268,43 @@ For more information check the [BIDS Apps website](https://bids-apps.neuroimagin
 Software packages for working with BIDS datasets.
 
 <!-- TOOLS starts -->
+- <img src='./images/logo_python.png' width='14px'> [ancp-bids](https://ancpbids.readthedocs.io/en/latest/): A Python package to read/write/query/validate BIDS datasets.
+  <br> [![PyPI version](https://badge.fury.io/py/ancpbids.svg)](https://pypi.org/project/ancpbids/)
 - <img src='./images/logo_python.png' width='14px'> [babs](https://pennlinc-babs.readthedocs.io/): BIDS App Bootstrap (BABS) is a reproducible, generalizable, and scalable Python package for BIDS App analysis of large datasets. It uses DataLad and adopts FAIRly big framework.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/PennLINC/babs?style=plastic)](https://github.com/PennLINC/babs) [![PyPI version](https://badge.fury.io/py/babs.svg)](https://pypi.org/project/babs/)
+  <br> [![PyPI version](https://badge.fury.io/py/babs.svg)](https://pypi.org/project/babs/)
 - <img src='./images/logo_python.png' width='14px'> [bids stats model](https://bids-standard.github.io/stats-models/index.html): Validate BIDS statistical model. To learn more the [BIDS stats model website](https://bids-standard.github.io/stats-models/index.html)
   <br> [![PyPI version](https://badge.fury.io/py/bsmschema.svg)](https://pypi.org/project/bsmschema/)
 - <img src='./images/logo_python.png' width='14px'> [bids-cfood](https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood): a module to handle BIDS dataset for the caosDB data crawler
-- <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_octave.png' width='16px'> [bids-matlab](https://github.com/bids-standard/bids-matlab): MATLAB/Octave tools to interact with datasets conforming to the BIDS format
-  <br>[![Last commit](https://img.shields.io/github/last-commit/bids-standard/bids-matlab?style=plastic)](https://github.com/bids-standard/bids-matlab)
+- <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_octave.png' width='16px'> [bids-matlab](https://bids-matlab.readthedocs.io/en/main/): MATLAB/Octave tools to interact with datasets conforming to the BIDS format
 - <img src='./images/logo_python.png' width='14px'> [BIDS-pydantic](https://github.com/gold-standard-phantoms/bids-pydantic): Pulls a specified version of the BIDS schema and creates corresponding Pydantic models, which will provide BIDS data validation using Python type annotations. See also [BIDS-pydantic-models](https://pypi.org/project/BIDS-pydantic-models/).
-  <br>[![Last commit](https://img.shields.io/github/last-commit/gold-standard-phantoms/bids-pydantic?style=plastic)](https://github.com/gold-standard-phantoms/bids-pydantic) [![PyPI version](https://badge.fury.io/py/BIDS-pydantic.svg)](https://pypi.org/project/BIDS-pydantic/)
-- <img src='./images/logo_python.png' width='14px'> [bids2cite](https://github.com/Remi-Gau/bids2cite): package to interactively update `dataset_description.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/Remi-Gau/bids2cite?style=plastic)](https://github.com/Remi-Gau/bids2cite)
+  <br> [![PyPI version](https://badge.fury.io/py/BIDS-pydantic.svg)](https://pypi.org/project/BIDS-pydantic/)
+- <img src='./images/logo_python.png' width='14px'> [bids2cite](https://bids2cite.readthedocs.io/en/latest/): package to interactively update `dataset_description.json` and generate citation files (for example `datacite.yml`) for BIDS datasets.
+- <img src='./images/logo_python.png' width='14px'> [bids2table](https://childmindresearch.github.io/bids2table/bids2table.html): bids2table is a library for efficiently indexing and querying large-scale BIDS neuroimaging datasets and derivatives.
+  <br> [![PyPI version](https://badge.fury.io/py/bids2table.svg)](https://pypi.org/project/bids2table/)
 - <img src='./images/logo_R.png' width='18px'> [bidser](https://bbuchsbaum.github.io/bidser/): Working with Brain Imaging Data Structure in R
-  <br>[![Last commit](https://img.shields.io/github/last-commit/bbuchsbaum/bidser?style=plastic)](https://github.com/bbuchsbaum/bidser)
-- <img src='./images/logo_python.png' width='14px'> [BIDSHandler](https://github.com/Macquarie-MEG-Research/BIDSHandler): Python module allowing complete manipulation of BIDS data
-  <br>[![Last commit](https://img.shields.io/github/last-commit/Macquarie-MEG-Research/BIDSHandler?style=plastic)](https://github.com/Macquarie-MEG-Research/BIDSHandler)
+- <img src='./images/logo_python.png' width='14px'> [BIDSHandler](https://github.com/Macquarie-MEG-Research/BIDSHandler): Library for loading and manipulating BIDS compatible MEG data
 - <img src='./images/logo_matlab.png' width='17px'> [Brainstorm](http://neuroimage.usc.edu/brainstorm/): MEG/EEG analysis package
 - <img src='./images/logo_python.png' width='14px'> [clpipe](https://clpipe.readthedocs.io/en/latest/index.html): streamlined processing pipeline for MRI data centered around BIDS
-  <br>[![Last commit](https://img.shields.io/github/last-commit/cohenlabUNC/clpipe?style=plastic)](https://github.com/cohenlabUNC/clpipe)
 - <img src='./images/logo_python.png' width='14px'> [cuBIDS](https://cubids.readthedocs.io/en/latest/): a Python package designed to facilitate reproducible curation of neuroimaging BIDS datasets
-  <br>[![Last commit](https://img.shields.io/github/last-commit/pennlinc/cubids?style=plastic)](https://github.com/pennlinc/cubids) [![PyPI version](https://badge.fury.io/py/cubids.svg)](https://pypi.org/project/cubids/)
+  <br> [![PyPI version](https://badge.fury.io/py/cubids.svg)](https://pypi.org/project/cubids/)
 - <img src='./images/logo_python.png' width='14px'> [File mapper](https://github.com/DCAN-Labs/file-mapper): An easy tool to copy/move/symlink files from one directory to the other! Can be used to "convert" dataset to be BIDS compliant.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/DCAN-Labs/file-mapper?style=plastic)](https://github.com/DCAN-Labs/file-mapper)
-- <img src='./images/logo_python.png' width='14px'> [GUI dataset description generator](None): GUI form that generates `dataset_description.json`
-  <br>[![Last commit](https://img.shields.io/github/last-commit/tolik-g/BIDS?style=plastic)](https://github.com/tolik-g/BIDS)
+- <img src='./images/logo_python.png' width='14px'> [GUI dataset description generator](https://github.com/tolik-g/BIDS): GUI form that generates `dataset_description.json`
+- <img src='./images/logo_python.png' width='14px'> [HALFpipe](https://github.com/HALFpipe/HALFpipe?tab=readme-ov-file#getting-started): wrapper for fmriprep and commong resting-stat and statistical analysis for fMRI
 - [Hierarchical Event Descriptors (HED) online tools](https://www.hed-resources.org): Online tools for annotation, validation, summary, and assembly of event file contents and annotations.
 - <img src='./images/logo_python.png' width='14px'> [Hierarchical Event Descriptors (HED) Python tools](https://www.hed-resources.org): HED libraries supporting schema development as well as annotation, validation, and analysis.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/hed-standard/hed-Python?style=plastic)](https://github.com/hed-standard/hed-Python) [![PyPI version](https://badge.fury.io/py/hedtools.svg)](https://pypi.org/project/hedtools/)
-- <img src='./images/logo_matlab.png' width='17px'> [Lead-DBS](https://www.lead-dbs.org/): A toolbox facilitating Deep Brain Stimulation electrode reconstructions  and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
+  <br> [![PyPI version](https://badge.fury.io/py/hedtools.svg)](https://pypi.org/project/hedtools/)
+- <img src='./images/logo_matlab.png' width='17px'> [Lead-DBS](https://www.lead-dbs.org/): A toolbox facilitating Deep Brain Stimulation electrode reconstructions and computer simulations supports BIDS conversion and ingestion of BIDS datasets.
 - <img src='./images/logo_python.png' width='14px'> [mne-bids](https://mne.tools/mne-bids/stable/index.html): collection of tools for converting magnetoencephalography (MEG) data into BIDS format, as well as some helper functions for creating the folders and metadata needed for a BIDS dataset.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/mne-tools/mne-bids?style=plastic)](https://github.com/mne-tools/mne-bids)
+- <img src='./images/logo_python.png' width='14px'> [mne-bids-pipeline](https://mne.tools/mne-bids-pipeline/stable/index.html): MNE-BIDS-Pipeline is a full-flegded processing pipeline for your MEG and EEG data. Under the hood, it uses MNE-Python.
 - [neurobagel annotate](https://neurobagel.org/data_prep/): This tool allows you to create a machine readable data dictionary in .json format for a tabular phenotypic file in .tsv format ("Data table").
-- [neurobagel query](https://neurobagel.org/query_tool/): Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging parameters.
-- <img src='./images/logo_python.png' width='14px'> [nipopy](https://neurobagel.org/nipoppy/overview/): Lightweight neuroimaging workflow manager to help with DICOM to BIDS conversion and running BIDS apps.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/neurodatascience/nipoppy?style=plastic)](https://github.com/neurodatascience/nipoppy)
+- [neurobagel query](https://neurobagel.org/public_nodes/): Neurobagel's query tool is a web interface for searching across a BIDS datasets based on various subject clinical-demographic and imaging parameters.
+- <img src='./images/logo_python.png' width='14px'> [nipopy](https://nipoppy.readthedocs.io/en/latest/): Lightweight neuroimaging workflow manager to help with DICOM to BIDS conversion and running BIDS apps.
 - [PRFmodel](https://github.com/vistalab/PRFmodel/wiki): a set of tools to fit population receptive field models to BIDS datasets
-  <br>[![Last commit](https://img.shields.io/github/last-commit/vistalab/PRFmodel?style=plastic)](https://github.com/vistalab/PRFmodel)
-- <img src='./images/logo_python.png' width='14px'> [psychopy-bids](https://gitlab.com/psygraz/psychopy-bids/): A psychopy plugin to help easily output a BIDS dataset, including `events.tsv` and `beh.tsv` files when running experiments with psychopy.
-- <img src='./images/logo_python.png' width='14px'> [PyBIDS](None): Python package to quickly parse / search the components of a BIDS dataset. It also contains functionality for running analyses on your data.
-  <br>[![Last commit](https://img.shields.io/github/last-commit/bids-standard/pybids?style=plastic)](https://github.com/bids-standard/pybids) [![PyPI version](https://badge.fury.io/py/pybids.svg)](https://pypi.org/project/pybids/)
+- <img src='./images/logo_python.png' width='14px'> [psychopy-bids](https://psychopy-bids.readthedocs.io/en/latest/): A psychopy plugin to help easily output a BIDS dataset, including `events.tsv` and `beh.tsv` files when running experiments with psychopy.
+- <img src='./images/logo_python.png' width='14px'> [PyBIDS](https://bids-standard.github.io/pybids/): Python package to quickly parse / search the components of a BIDS dataset. It also contains functionality for running analyses on your data.
+  <br> [![PyPI version](https://badge.fury.io/py/pybids.svg)](https://pypi.org/project/pybids/)
 - <img src='./images/logo_R.png' width='18px'> [rbids](https://github.com/mathesong/rbids): aims to make BIDS datasets more easily accessible for packages written in R
-  <br>[![Last commit](https://img.shields.io/github/last-commit/mathesong/rbids?style=plastic)](https://github.com/mathesong/rbids)
 - <img src='./images/logo_matlab.png' width='17px'> <img src='./images/logo_octave.png' width='16px'> [spm_2_bids](https://spm-2-bids.readthedocs.io/en/latest/): a tool convert SPM preprocessed output to BIDS derivatives (trying to follow [BEP12](https://bids.neuroimaging.io/bep012))
-  <br>[![Last commit](https://img.shields.io/github/last-commit/cpp-lln-lab/spm_2_bids?style=plastic)](https://github.com/cpp-lln-lab/spm_2_bids)
 <!-- TOOLS ends -->
 
 ## Code
