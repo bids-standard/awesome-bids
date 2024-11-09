@@ -8,7 +8,7 @@ related to the Brain Imaging Data Structure.
 
 ## Documentation
 
-Documentation related to BIDS.
+Documentation related to BIDS. 
 
 - The central [BIDS website](http://www.bids-standard.org/) to get general information about BIDS.
 - The [BIDS Starter Kit](https://bids-standard.github.io/bids-starter-kit/)
