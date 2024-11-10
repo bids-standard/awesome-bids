@@ -11,7 +11,6 @@ from utils import (
     bids_website_data,
     language_badge,
     last_commit,
-    license_badge,
     link,
     logo,
     pypi,
@@ -56,7 +55,7 @@ def write_converters(readme, converters: list[dict], section: str):
             f"- {logo(converter_)} [{converter_['name']}]({link(converter_)}):{comment(converter_)}\n"
         )
         readme.write(
-            f"  <br>{language_badge(converter_)}{last_commit(converter_)}{pypi(converter_)}{docker_badge(converter_)}{license_badge(converter_)}\n"
+            f"  <br>{language_badge(converter_)}{last_commit(converter_)}{pypi(converter_)}{docker_badge(converter_)}\n"
         )
 
 

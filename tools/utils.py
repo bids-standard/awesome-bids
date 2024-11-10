@@ -99,26 +99,3 @@ def language_badge(tool: dict) -> str:
             badge_string += f"![](https://img.shields.io/badge/{language}-{color}.svg{BADGE_FORMAT})"
 
     return badge_string
-
-
-def license_badge(tool: dict) -> str:
-    # from https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
-    if tool.get("license") in [None, ""]:
-        return ""
-
-    shields_url = "https://img.shields.io/badge/License-"
-
-    license = tool["license"]
-
-    if license == "MIT":
-        return f"[![License: {license}]({shields_url}MIT-yellow.svg{BADGE_FORMAT})](https://opensource.org/licenses/MIT)"
-    elif license == "GPL-3.0":
-        return f"[![License: {license}]({shields_url}GPLv3-blue.svg{BADGE_FORMAT})](https://www.gnu.org/licenses/gpl-3.0)"
-    elif license == "GPL-2.0":
-        return f"[![License: {license}]({shields_url}GPLv2-blue.svg{BADGE_FORMAT})](https://www.gnu.org/licenses/gpl-2.0)"
-    elif license == "BSD-3-Clause":
-        return f"[![License: {license}]({shields_url}BSD_3--Clause-blue.svg{BADGE_FORMAT})](https://opensource.org/licenses/BSD-3-Clause)"
-    elif license == "Apache 2.0":
-        return f"[![License: {license}]({shields_url}Apache_2.0-blue.svg{BADGE_FORMAT})](https://opensource.org/licenses/Apache-2.0)"
-    else:
-        return ""
