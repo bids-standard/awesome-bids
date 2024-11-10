@@ -8,6 +8,9 @@
     },
     {
       "pattern": "^None$"
+    },
+    {
+      "pattern": "^https://opensource.org/licenses/.*"
     }
   ],
   "timeout": "20s",
