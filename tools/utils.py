@@ -57,11 +57,11 @@ def link(tool: dict) -> str:
 
 
 def last_commit(tool: dict) -> str:
-    if tool.get("url") in [None, ""]:
+    if tool.get("repo_url") in [None, ""]:
         return ""
-    if tool.get("url").startswith("https://github.com/"):
-        badge_img = f"https://img.shields.io/github/last-commit/{tool['url'].replace('https://github.com/', '')}{BADGE_FORMAT}"
-        return f"[![Last commit]({badge_img})]({tool['url']})"
+    if tool.get("repo_url").startswith("https://github.com/"):
+        badge_img = f"https://img.shields.io/github/last-commit/{tool['repo_url'].replace('https://github.com/', '')}{BADGE_FORMAT}"
+        return f"[![Last commit]({badge_img})]({tool['repo_url']})"
     return ""
 
 
