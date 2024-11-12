@@ -11,16 +11,14 @@ related to the Brain Imaging Data Structure.
 Documentation related to BIDS.
 
 - The central [BIDS website](http://www.bids-standard.org/) to get general information about BIDS.
-- The [BIDS Starter Kit](https://bids-standard.github.io/bids-starter-kit/)
+- The [BIDS Starter Kit](https://bids-website.readthedocs.io/en/latest/getting_started/index.html)
   is the best place to get started with BIDS.
 - The official [BIDS Specification](https://bids-specification.readthedocs.io) to get into the details.
 - The [BIDS youtube channel](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw)
   where we try to curate [playlists](https://www.youtube.com/@brainimagingdatastructure6721/playlists) of BIDS related videos.
 - Slides of many BIDS related presentations are available on the [Open Science Framework](https://osf.io/yn93h/).
 - The [FieldTrip](https://www.fieldtriptoolbox.org/example/bids/) websites contains
-  many BIDS  tips and  examples, mainly for MEG, EEG, fNIRS, etc.
-- If you help to mention BIDS in one of your grant,
-  make sure that to check out the [BIDS grant writing kit](https://github.com/bids-standard/grant_writing_kit#bids-grant-writing-kit).
+  many BIDS tips and  examples, mainly for MEG, EEG, fNIRS, etc.
 
 ## Community
 
