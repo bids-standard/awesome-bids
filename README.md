@@ -40,9 +40,9 @@ Documentation related to BIDS.
 
 Here are the official BIDS account on several social media.
 
-- [Twitter / X](https://twitter.com/BIDSstandard)
 - [Mastodon](https://fosstodon.org/@bidsstandard/)
 - [Bluesky](https://bsky.app/profile/bidsstandard.bsky.social)
+- [Instagram](https://www.instagram.com/bidsstandard/)
 - [YouTube](https://www.youtube.com/channel/UCxZUcYfd_nvIVWAbzRB1tlw)
 - Our podcast on [anchor](https://anchor.fm/bids-maintenance)
 
